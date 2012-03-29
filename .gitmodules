@@ -1,0 +1,3 @@
+[submodule "g.raphael"]
+	path = g.raphael
+	url = https://github.com/DmitryBaranovskiy/g.raphael.git
