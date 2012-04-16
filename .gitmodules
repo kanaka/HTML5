@@ -1,3 +1,6 @@
 [submodule "g.raphael"]
 	path = g.raphael
 	url = https://github.com/DmitryBaranovskiy/g.raphael.git
+[submodule "flotr2"]
+	path = flotr2
+	url = https://github.com/HumbleSoftware/Flotr2.git
