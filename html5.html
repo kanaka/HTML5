@@ -32,6 +32,17 @@
 	<div id="overview" class="step" data-x="2000" data-y="1000" data-z="0" data-scale="7">
 	</div>
 
+        <!-- Level0 -->
+        <div id="level0" class="step" data-x="-1500" data-y="0">
+            <h1>Level0</h1>
+            <p id="level0a" data-jmpress="fade">
+                Everyone (except IE 6-8)
+            </p>
+            <p id="level0b" data-jmpress="fade">
+                IE 6-8 users with polyfills/fallbacks
+            </p>
+        </div>
+
         <!-- New Semantic Elements -->
         <div id="semantics" class="step" data-x="0" data-y="0">
             <div class="browser-info">
@@ -86,9 +97,12 @@
             <strong>New hotness</strong>: load/define custom fonts.
             </p>
             <p id="font-face3" data-jmpress="fade">
-            Varying formats supported in older browsers (EOT, TTF, SVG)
+            Making fonts first class citizens of the web.
             </p>
             <p id="font-face4" data-jmpress="fade">
+            Varying formats supported in older browsers (EOT, TTF, SVG)
+            </p>
+            <p id="font-face5" data-jmpress="fade">
             WOFF (Web Open Font Format) is a level2 feature with wide support.
             </p>
 	</div>
@@ -172,6 +186,91 @@
         </div>
 
 
+        <!-- Canvas 2D Context -->
+        <div id="canvas" class="step" data-x="6000" data-y="0">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9.0<li>2.0<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level0</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/2dcontext/">W3C Canvas 2D Context</a></div>
+            </div>
+
+            <h1>Canvas 2D Context</h1>
+            <p id="canvas1" data-jmpress="fade">
+            If any element can be considered the inspiration for HTML5, it's 2D Canvas.
+            </p>
+            <p id="canvas2" data-jmpress="fade">
+            First-class &lt;img&gt; tag. 
+            </p>
+            <div id="canvas3" data-jmpress="fade">
+            <a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_canvas.htm">Hands On (Microsoft)</a>
+            </div>
+	</div>
+
+        <div id="canvas-example" class="step example-large" data-x="6000" data-y="1000">
+            <h1>2D Canvas Examples</h1>
+            <input type="button" value="IrishSpring" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Performance/IrishSpring/')">
+            <input type="button" value="Crazy Tunnel" onclick="load('#canvasex', 'http://www.catuhe.com/msdn/canvas/tunnel.htm')">
+            <input type="button" value="TouchEffects" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Graphics/TouchEffects/')">
+            <input type="button" value="Particle Acceleration" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Performance/ParticleAcceleration/')">
+            <input type="button" value="U.S. Wind Map" onclick="load('#canvasex', 'http://hint.fm/wind/index.html')">
+            <input type="button" value="Coil Game" onclick="load('#canvasex', 'http://hakim.se/experiments/html5/coil/')">
+            <input type="button" value="Unload" onclick="unload('#canvasex')">
+            <iframe id="canvasex" width="100%" height="80%">
+            </iframe>
+        </div>
+
+
+        <!-- CSS3 @media-queries -->
+        <div id="media-queries" class="step" data-x="7500" data-y="0">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9.0<li>3.5<li>4.0<li>3.1/4.0<li>9.5<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level0</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-mediaqueries/">CSS3 Media Queries</a></div>
+            </div>
+
+            <h1>CSS3 @media-queries</h1>
+            <p id="queries1" data-jmpress="fade">
+            Different CSS styles depending on screen size / output media.
+            </p>
+            <p id="queries2" data-jmpress="fade">
+            A key component of responsive web design.
+            </p>
+            <p id="queries3" data-jmpress="fade">
+            Common pattern is to target 3 sizes:
+            <ul>
+                <li> TBD
+                <li> TBD
+                <li> TBD
+            </ul>
+            </p>
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul id="queries4">
+                <li><a href="http://www.anderssonwise.com/" target="anderson">Anderson-Wise</a>
+                <li><a href="http://thinkvitamin.com/" target="vitamin">ThinkVitamin</a>
+                <li><a href="http://forefathersgroup.com/" target="forefather">Forefathers Group</a>
+            </ul>
+            </div>
+	</div>
+
+
+        <!-- Level1 -->
+        <div id="level1" class="step" data-x="-1500" data-y="2000">
+            <h1>Level1</h1>
+            <p data-jmpress="fade">
+                Everyone (except IE 6-8)
+            </p>
+            <p data-jmpress="fade">
+                Often IE 6-8 users (with polyfills/fallbacks)
+            </p>
+        </div>
+
 </div>
 
 <div class="hint">
@@ -192,6 +291,7 @@ $(function() {
 });
 
 function load(target, href) {
+    console.log("Loading: " + href);
     $(target)[0].src = href;
 }
 

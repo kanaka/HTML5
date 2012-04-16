@@ -277,9 +277,6 @@
             U.S. Wind Map:
                 http://hint.fm/wind/index.html
 
-            3D sketch using 2D canvas:
-                http://hakim.se/experiments/html5/sketch/
-
             Coil game:
                 http://hakim.se/experiments/html5/coil/    
 
@@ -727,6 +724,9 @@
         http://lab.simurai.com/monster/
             - Several CSS effects
             - audio tags
+
+        3D sketch using 2D canvas:
+            http://hakim.se/experiments/html5/sketch/
 
         CSS Analglyph 3D effect:
             http://lab.simurai.com/css3d/
