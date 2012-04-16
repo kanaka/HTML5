@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>HTML5</title>
+
+	<meta name="description" content="HTML5 Presentation">
+	<meta name="author" content="Joel Martin @bus_kanaka github@martintribe.org" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link href="style1.css" rel="stylesheet" type="text/css" />
+	<link href="style2.css" rel="stylesheet" type="text/css" />
+	<link href="style3.css" rel="stylesheet" type="text/css" />
+	<link href="jmpress.js/dist/basic-animations.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="jmpress.js/libs/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jmpress.js/dist/jmpress.js"></script>
+</head>
+<body>
+
+<div id="simple">
+
+        <div id="web-evolution" class="step large-step" data-x="-3000" data-y="0">
+            Evolution of the Web:
+            <input type="button" value="Load" onclick="load('#d1', 'http://evolutionofweb.appspot.com/')">
+            <input type="button" value="Unload" onclick="unload('#d1')">
+            <iframe id="d1" width="100%" height="100%">
+            </iframe>
+	</div>
+
+	<div id="overview" class="step" data-x="2000" data-y="1000" data-z="0" data-scale="7">
+	</div>
+
+        <!-- New Semantic Elements -->
+        <div id="semantics" class="step" data-x="0" data-y="0">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9.0<li>3.0<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level0</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/">W3C HTML5 Spec</a></div>
+            </div>
+
+            <h1>New Semantic Elements</h1>
+            <p id="semantics1" data-jmpress="fade">
+            &lt;section&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;header&gt;, &lt;footer&gt;, etc.
+            </p>
+            <p id="semantics2" data-jmpress="fade">
+            One of the largest parts of the W3C HTML5 Specifiction proper ...
+            </p>
+            <p id="semantics3" data-jmpress="fade">
+            ... and the least exciting.
+            </p>
+            <p id="semantics4" data-jmpress="fade">
+            <img height=220 src="imgs/cat-tired.jpg">
+            </p>
+	</div>
+
+        <div id="semantics-example" class="step example" data-x="0" data-y="700">
+            <h1>New Semantic Elements Example</h1>
+            <input type="button" value="Original (HTML4)" onclick="load('#sem1', 'http://diveintohtml5.info/examples/blog-original.html')">
+            <input type="button" value="Semantic (HTML5)" onclick="load('#sem1', 'http://diveintohtml5.info/examples/blog-html5.html')">
+            <input type="button" value="Unload" onclick="unload('#sem1')">
+            <iframe id="sem1" width="100%" height="80%">
+            </iframe>
+        </div>
+
+        <!-- CSS @font-face -->
+        <div id="font-face" class="step" data-x="1500" data-y="0">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>5.5<li>3.5<li>4.0<li>3.2<li>10.0<li>3.2<li>2.2
+                </ul>
+                <div class="html5-level">level0</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/css3-fonts/">CSS3 Fonts Module</a></div>
+            </div>
+
+            <h1>@font-face</h1>
+            <p id="font-face1" data-jmpress="fade">
+            <strong>Old and busted</strong>: match from fonts installed on the browser OS.
+            </p>
+            <p id="font-face2" data-jmpress="fade">
+            <strong>New hotness</strong>: load/define custom fonts.
+            </p>
+            <p id="font-face3" data-jmpress="fade">
+            Varying formats supported in older browsers (EOT, TTF, SVG)
+            </p>
+            <p id="font-face4" data-jmpress="fade">
+            WOFF (Web Open Font Format) is a level2 feature with wide support.
+            </p>
+	</div>
+
+        <div id="font-face-example" class="step example-large" data-x="1500" data-y="1000">
+            <h1>@font-face Example</h1>
+            <input type="button" value="Apple Typography Showcase" onclick="load('#ff1', 'http://www.apple.com/html5/showcase/typography/')">
+            <input type="button" value="Unload" onclick="unload('#ff1')">
+            <iframe id="ff1" width="100%" height="80%">
+            </iframe>
+        </div>
+
+
+        <!-- CSS position:fixed -->
+        <div id="fixed" class="step" data-x="3000" data-y="0">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>7.0<li>2.0<li>4.0<li>3.1<li>9.0<li>5.0<li>2.2
+                </ul>
+                <div class="html5-level">level0</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/CSS21/visuren.html">CSS2.1 Visual Formatting Model</a></div>
+            </div>
+
+            <h1>CSS position:fixed</h1>
+            <p id="fixed1" data-jmpress="fade">
+            Elements that don't scroll.
+            </p>
+            <p id="fixed2" data-jmpress="fade">
+            Like absolute position but relative to the viewport
+            instead of the document.
+            </p>
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul id="fixed3">
+                <li><a href="http://nizoapp.com/" target="nizo">Nizo</a>
+                    <ul>
+                        <li> fixed and dynamic absolute position
+                    </ul>
+                <li><a href="http://yesisaidyes.com/" target="yesyes">Yes I Said Yes</a>
+                    <ul>
+                        <li>Static and dynamic fixed position
+                        <li>positioned background image used for animation
+                    </ul>
+                <li><a href="http://davidappleyard.net/" target="appleyard">davidappleyard.net</a>
+                    <ul>
+                        <li>Activate fixed while scrolling
+                    </ul>
+            </ul>
+            </div>
+	</div>
+
+
+        <!-- Web Storage -->
+        <div id="webstorage" class="step" data-x="4500" data-y="0">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>8.0<li>2.0<li>4.0<li>4.0<li>10.5<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level0</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/webstorage/">W3C Web Storage</a></div>
+            </div>
+
+            <h1>Web Storage</h1>
+            <p id="webstorage1" data-jmpress="fade">
+            Like browser cookies, but more transactional and 5Mb vs 4Kb per domain.
+            </p>
+            <div id="webstorage2" data-jmpress="fade">
+            <p><code>sessionStorage</code> - per session storage</p>
+            <p><code>localStorage</code> - persistent across sessions</p>
+            </div>
+	</div>
+
+        <div id="webstorage-example" class="step example" data-x="4500" data-y="700">
+            <h1>Web Storage Example</h1>
+            <input type="button" value="HTML5Rocks Web Storage Demo" onclick="load('#store1', 'http://slides.html5rocks.com/#web-storage')">
+            <input type="button" value="Unload" onclick="unload('#store1')">
+            <iframe id="store1" width="100%" height="80%">
+            </iframe>
+        </div>
+
+
+</div>
+
+<div class="hint">
+    <p>Use arrow keys to navigate</p>
+</div>
+
+<script type="text/javascript">
+$(function() {
+        $('#simple').jmpress({
+                mouse: {
+                    // Disable step mouse click
+                    clickSelects: false
+                },
+                viewPort: {
+                    zoomBindMove: false
+                }
+            });
+});
+
+function load(target, href) {
+    $(target)[0].src = href;
+}
+
+function unload(target) {
+    $(target)[0].src = "";
+}
+
+</script>
+
+</body>
+</html>

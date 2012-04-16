@@ -1,0 +1,381 @@
+:'<,'>s/ *\([0-9X][0-9\.]*\)/<td>\1<\/td>/g
+
+
+Icons:
+    http://raphaeljs.com/icons/#!
+
+
+Browser share graphs:
+    http://arstechnica.com/business/news/2012/03/browsing-behavior-in-february-internet-explorer-chrome-down-firefox-up.ars
+    - Notable that firefox and Chrome have succeeded in getting most
+      users to upgrade rapidly.
+
+- Misc notes:
+    - Javascript has been most popular language on github for a while
+      now. Overtook Ruby last year.
+    - Node.js
+        - The Node Beginner Book
+            http://www.nodebeginner.org/
+    - Polyfill/shims
+    - http://xkcd.com/934/
+    - www.lastcalc.com
+    - http://www.businessinsider.com/the-future-of-mobile-deck-2012-3#-1
+
+- Connect to browser on phone/ipad in real-time
+
+http://labs.dinahmoe.com/plink/#
+
+- Field Guide to Web Applications
+    http://www.html5rocks.com/webappfieldguide/toc/index/
+
+- Examples of just how much mindshare and energy this space has
+  already.
+    - 22 HTML5 presentation frameworks:
+        http://www.impressivewebs.com/html-slidedeck-toolkits/
+    - 37 HTML5 mobile UI toolkits/projects
+        http://phonegap.com/tools/
+    - 72 (and counting) Javascript Game engines/libraries:
+        https://github.com/bebraw/jswiki/wiki/Game-Engines
+    - Pages and pages of micro-frameworks:
+        http://microjs.com/
+    - Why:
+        - huge pool of moderately skill web developers during last 17 decades
+        - open source driven, lots of sharing
+        - view source + github: means collaborating and borrowing
+          has been kicked into overdrive
+        - Huge growth in just last 2 years: Javascript now most common
+          language on github by a longshot
+
+- Javascript libraries and resources in various categories:
+    https://github.com/bebraw/jswiki/wiki
+
+    - Beginner's Resources
+        https://github.com/bebraw/jswiki/wiki/Beginner%27s-Resources
+    
+
+- In practice:
+    - Responsive Web Design:
+      http://html5-demos.appspot.com/static/gdd11-modern-web-apps/index.html#13
+    - Using history fragment properly:
+      http://html5-demos.appspot.com/static/gdd11-modern-web-apps/index.html#14
+    - Offline:
+      http://html5-demos.appspot.com/static/gdd11-modern-web-apps/index.html#20
+    - Notification:
+      http://html5-demos.appspot.com/static/gdd11-modern-web-apps/index.html#23
+    - More resources:
+      http://html5-demos.appspot.com/static/gdd11-modern-web-apps/index.html#41
+    - Addy Osmani: Large-scale Applications:
+      http://speakerdeck.com/u/addyosmani/p/building-decoupled-large-scale-applications-using-javascript-and-jquery
+    - Javascript Design Patterns:
+      http://addyosmani.com/resources/essentialjsdesignpatterns/book/
+
+- Stages of the web
+    http://www.mikealrogers.com/posts/a-new-direction-for-web-applications-.html
+
+    - Static Web: static pages, Apache web server
+        - Static pages
+    - Templated Web: constructed pages, PHP, CGI.
+        - Static pages that are dynamically generated
+    - Read/write Web: Web 2.0, DHTML, AJAX, MVC pattern, Rails.
+        - Web sites become dynamic views of dynamic content
+    - Web Apps: cloud, Node.js
+        - Full applications delivered to the browser
+
+- The Edge of HTML5 and HTML5 media
+    http://html5-demos.appspot.com/static/html5-therealbleedingedge/template/index.html#1
+    http://kinlan-presentations.appspot.com/sfmediahtml/template/index.html#1
+
+- At some point mobile sites/apps will become the target instead of
+  native apps:
+    http://www.useit.com/alertbox/mobile-sites-apps.html
+
+- HTML5 design book: http://www.htmlandcssbook.com/
+
+
+- Cool examples:
+    - Traditional web apps:
+        maps.google.com (inspirational grandfather of modern web apps)
+        mail.google.com
+        docs.google.com
+    - Utilities:
+        - Color Picker: http://raphaeljs.com/picker.html
+        - Interactive Pie Chart: http://raphaeljs.com/pie.html
+        - Image effects: glfx.js: http://evanw.github.com/glfx.js/demo/
+        - Seriously.js: Real-time video compositor (using WebGL)
+          https://github.com/brianchirls/Seriously.js
+        - JSMad (MP3 decode and playback):
+            http://jsmad.org/
+            https://github.com/nddrylliog/jsmad
+        - GateOne terminal: https://github.com/liftoff/GateOne
+    - Applications with traditional UI:
+        - pdf.js:
+            demo: http://mozilla.github.com/pdf.js/web/viewer.html
+            https://github.com/mozilla/pdf.js
+        - Circuit Lab
+            https://www.circuitlab.com/editor/
+        - 3D Tin:
+            http://www.3dtin.com/
+        - noVNC: http://noVNC.com
+    - Just cool:
+        - Wind map: http://hint.fm/wind/
+        - Canvas, box2d: http://mrdoob.com/projects/chromeexperiments/ball_pool/
+    - Games:
+        http://crazybugs.ivank.net/
+        - Me & My Shadow (Emscripten compile):
+          http://syntensity.com/static/mams/mams.html
+        http://bigfish.ivank.net/ (too slow)
+        - Robots are People Too Platformer:
+        http://raptjs.com/play/#/rapt/Intro_1/
+        - http://rumpetroll.com/#
+        (with two browsers windows and/or audience participation)
+        - Emberwind:
+          http://operasoftware.github.com/Emberwind/
+        - Tank World:
+          http://www.playtankworld.com/level/the_fields
+        - And of course: http://chrome.angrybirds.com/com
+    - Various WebGL demos
+        http://madebyevan.com/webgl-water/ (broken in Chrome)
+        http://alteredqualia.com/three/examples/webgl_terrain_dynamic.html
+        http://oos.moxiecode.com/js_webgl/forest/
+        http://lights.elliegoulding.com/ (music visualizatio)
+        http://evanw.github.com/lightgl.js/tests/gpulightmap.html
+        Tilt: firefox 3D DOM viewer
+        TriggerRally: http://triggerrally.com/
+        Walking WebGL monster: http://operasoftware.github.com/Odin/mobile/
+        Quake 3 level: http://media.tojicode.com/q3bsp/
+        Spaceship viewer: http://www.eveonline.com/universe/spaceships/
+        - Streaming Blender into browser:
+            http://pyppet.blogspot.com/2012/01/pyppet-webgl-streaming.html
+            http://www.youtube.com/watch?v=UDIn8T4H7xE
+        - Google Graphing
+            http://googledevelopers.blogspot.com/2012/04/fridaygram-3d-graphs-battling-bacteria.html
+    Javascript as a target platform:
+        - Gameboy emulator: http://www.grantgalitz.org/gamecenter/index.html
+        - H.264 decode (emscripten)
+            - Broadway:
+            http://mbebenita.github.com/Broadway/broadway.html
+            https://github.com/mbebenita/Broadway
+        - http://bellard.org/jslinux/
+
+- More on Javascript as a platform (compiling to Javascript):
+    - GWT: http://code.google.com/webtoolkit/
+    - ClojureScript: 
+    - http://elm-lang.org/
+    - emscripten (LLVM bytecode to Javascript):
+        https://github.com/kripken/emscripten/wiki
+    - IL2JS: .NET - https://github.com/mkol/il2js/wiki
+    - Java/JVM: BicaVM (more proof-of-concept)
+    - Native vs NaCl vs 'compiled' to JavaScript:
+      http://blog.j15r.com/2011/12/for-those-unfamiliar-with-it-box2d-is.html
+    - Mandreel: Commercial tool for converting C++/Objective-C apps to
+      HTML5/Flash. Emphasis on porting games.
+      http://www.mandreel.com
+
+
+- Useful links:
+    caniuse.com
+    html5rocks.com
+    html5test.com
+    http://mobilehtml5.org/
+    http://html5readiness.com/
+    http://badassjs.com/
+        http://badassjs.com/post/15082876071/2011-a-badass-javascript-year-in-review
+    http://dev.opera.com/articles/view/efficient-javascript/
+
+    Most important parts of HTML5: http://blog.n01se.net/?p=375
+    Dive Into HTML5: http://diveintohtml5.info/
+    State of Mozilla related to games: https://wiki.mozilla.org/Platform/AreWeFunYet
+
+    ES5 compatibility table: http://kangax.github.com/es5-compat-table/
+
+    JSConf videos: http://blip.tv/jsconf
+    - Page Speed lessons:
+        http://pagespeed-velocity2011.appspot.com/#1
+    - Apache Cordova (formerly PhoneGap): platform for building native
+      mobile applications using HTML, CSS and JavaScript
+
+
+Documentation/Reference:
+    - MDN: https://developer.mozilla.org/en-US/
+        w3schools sucks: add "MDN" to your HTML/CSS/Javascript searches
+    - StackOverflow
+    - http://bonsaiden.github.com/JavaScript-Garden/
+    - Crockford: Javascript: the Good Parts
+    - http://wtfjs.com/
+    - John Resig's Advanced Javascript: http://ejohn.org/apps/learn/
+    - http://css-tricks.com/
+
+    - Game development resources:
+        https://github.com/DaRaFF/jsgamewiki
+    - WebSockets tutorial (a bit MS specific):
+      http://blogs.msdn.com/b/ie/archive/2012/03/19/websockets-in-windows-consumer-preview.aspx
+
+Developer tools:
+    Chrome: http://www.webkitbits.com/post/13796063053/chrome-dev-tools-performance
+    Firefox: http://functionsource.com/post/firefox-developer-tools-biggest-upgrade-since-firebug
+
+- Useful projects:
+    - HTML5 Boilerplate: http://html5boilerplate.com/
+    - Backbone.js: (Models, Views, Collections, Events)
+        http://documentcloud.github.com/backbone/
+    - Ember.js: http://emberjs.com/
+    - Bootstrap: Twitter's web UI library
+        http://twitter.github.com/bootstrap/
+        - backbone vs ember: http://smus.com/backbone-and-ember
+        - Demos of various MVC frameworks: http://addyosmani.github.com/todomvc/
+    - http://www.css3maker.com/
+    - https://typekit.com/
+    - font.js: http://pomax.nihongoresources.com/pages/Font.js/
+    - box2d.js: physics library
+    - Cappuccino: Objective-J framework for building web apps
+    - prototype.js: Class-driven development and AJAX toolkit
+      http://prototypejs.org/
+    - Audiolib.js: http://audiolibjs.org/
+    - Sink.js: https://github.com/jussi-kalliokoski/sink.js
+    - http://evanw.github.com/csg.js/ (Constructive Solid Geometry)
+    - https://github.com/mrdoob/three.js (JavaScript 3D library)
+    - Popcorn.js: makes video work like the web. JS event framework for HTML5 media
+      http://mozillapopcorn.org/
+    - Raphael: simplified vector graphics
+      http://raphaeljs.com/: 
+    - glfx.js: JS image effects library
+      http://evanw.github.com/glfx.js/
+    - ThreeNodes.js (GL scene editor):
+        http://idflood.github.com/ThreeNodes.js/public/index.html
+        https://github.com/idflood/ThreeNodes.js
+    - Easel.js: JS lib for working with the html5 canvas element 
+    - IvanK: port of Flash drawing APIs
+    - CoffeePhysics: http://soulwire.co.uk/coffeephysics/
+    - http://browserling.com/: test across multiple browser versions
+    - JSFiddle: jsfiddle.net
+
+    - jQuery Mobile
+    - Sencha Touch 2
+    - Sencha Ext JS 4
+
+- People/Blogs:
+    - http://badassjs.com
+    - http://updates.html5rocks.com
+    - http://www.htmlgoodies.com/ (lots of ads but good content)
+    - http://planet-webgl.org/
+
+    - Surfin' Safari: http://www.webkit.org/blog
+    - Chromium: http://blog.chromium.org
+    - Chrome blog: http://chrome.blogspot.com
+    - Mozilla Hacks: http://hacks.mozilla.org/
+    - Opera Developer News: http://my.opera.com/ODIN/blog/
+    - IEBlog: http://blogs.msdn.com/b/ie/
+
+    - WHATWG blog: http://blog.whatwg.org
+    - W3C blog: http://www.w3.org/QA/
+
+    - Peter Beverloo (Chrome Developer): http://peter.sh
+    - Paul Irish: http://paulirish.com/
+    - Addy Osmani: http://addyosmani.com/blog/
+    - John Resig: http://ejohn.org/category/blog/
+    - Mr. Doob: http://ricardocabello.com/blog
+    - Rob Hawkes: http://rawkes.com/
+    - Robert Nyman: http://robertnyman.com/
+    - Anne van Kesteren: http://annevankesteren.nl/
+
+Books:
+    - jQuery Mobile:
+        http://shop.oreilly.com/product/0636920020585.do
+    - Building Android apps with HTML, CSS and Javascript:
+        http://shop.oreilly.com/product/0636920022886.do
+    - Javascript the Good Parts:
+        http://shop.oreilly.com/product/9780596517748.do
+
+
+Explosion of HTML5 platforms:
+    - Desktop
+        - Chrome
+        - Safari
+        - Firefox
+        - Opera
+        - IE9, IE10
+    - Mobile default browser
+        - iOS
+        - Android (multiple versions)
+        - RIM
+        - WebOS
+        - Symbian
+        - Bada
+        - Windows Mobile
+    - Mobile add-on browsers:
+        - Opera Mobile, Opera Mini
+        - Android Chrome
+        - Firefox for Android
+    - But, all the vendors are currently on-board with real and rapid
+      standardization
+
+Reasons for web apps:
+    - Avoid native walled gardens (iOS App Store, Google Marketplace,
+      Amazon App Store, Windows Marketplace, etc)
+    - Much tighter and more seamless integration with existing web and
+      social networks: facebook, google+, etc.
+    - HTML5 apps can be made native (i.e. PhoneGap), but not the other
+      way around (yet).
+    - HTML5+CSS3+Javascript is the direction everybody (except Apple)
+      is pushing towards for building native apps: Windows 8 Metro,
+      MeeGo/Tizen, HP webOS, 
+
+    - No matter what, you are beholden to Apple:
+      http://www.itwriting.com/blog/5656-apple-breaks-web-storage-in-ios-5-1-does-not-care-about-web-apps.html
+
+WHATWG:
+    - introduction:
+      "Around the time that HTML's evolution was stopped in 1998 ..."
+
+      "To avoid exposing Web authors to the complexities of
+      multithreading, the HTML and DOM APIs are designed such that no
+      script can ever detect the simultaneous execution of other
+      scripts."
+
+      "Scripts in HTML have 'run-to-completion' semantics"
+      "On the other hand, parsing of HTML files happens asynchronously
+      and incrementally"
+      "The majority of presentational features from previous versions
+      of HTML are no longer allowed."
+    
+    - elements:
+      "Because HTML conveys meaning"
+        - HTML: meaning
+        - CSS: presentation
+        - Javascript: behavior
+
+    - HTML: concrete syntax
+    - DOM: in-memory representation
+
+
+Image collection:
+    - https://www.destroyallsoftware.com/talks/wat
+
+    - xkcd: I'm a Mac, I'm a PC
+
+    - "Oh the huge Manatee":
+      http://www.flickr.com/photos/ulrichp/1362599/
+
+    - Awesomeness:
+      http://pleasedress.me/img/4454.gif
+    
+    http://blip.tv/clojure/michael-fogus-the-macronomicon-5970233
+    - Two ended gun:
+    - Commodore 64 ready screen
+        http://pixelfist.com/article/2011/05/3076/commodore-crunch/
+
+    - Squirel fight:
+        http://www.orlandosentinel.com/multimedia/os-ninja-squirrels-photo-20120402,0,5846619.story
+
+    Ideas:
+        http://www.slideshare.net/jokechannel/weird-and-funny-pictures-presentation
+        http://www.slideshare.net/meisterjoker/fantastic-pictures-45508
+        http://www.slideshare.net/rado_fun/funny-pictures-19819
+        http://babyanimalz.com/2010/03/laughing-kitten/
+
+        WAT: http://knowyourmeme.com/memes/wat
+
+    http://www.buzzymultimedia.com/caffeine-loadingplease-wait.html
+
+    Troll face: http://ohinternet.com/Trollface
+    Peanuts...Monkeys: http://techcrunch.com/2012/04/15/stop-looking-for-a-technical-co-founder/

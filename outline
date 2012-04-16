@@ -1,0 +1,802 @@
+1a. Introduction
+1b. What is HTML5?
+2. HTML5/Web Application Technologies and APIs
+3. Native vs Web Applications 
+4. Resources/blogs/people, best practices, more demo
+
+
+
+1a. Introduction
+    - About me: globe fly around
+    - About me: technical background
+
+1b. What is HTML5?
+    - Some crazy demos:
+        Speech input:
+            http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#18
+        WebGL Water Pool:
+
+        Birds and Terrain:
+            http://alteredqualia.com/three/examples/webgl_terrain_dynamic.html
+
+
+    - History
+        - What happened to the web in 1998?
+            - XML happened (XHTML)
+            - Microsoft's dominance happened
+        - 2004
+            - W3C rejects re-opening HTML
+            - Apple, Mozilla, Opera form WHATWG
+        - 2007
+            - W3C re-opens HTML work
+
+    - A Short History of the Web (the history book version)
+        http://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Layout_engine_usage_share-2009-01-07.svg/1000px-Layout_engine_usage_share-2009-01-07.svg.png
+        http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Browser_Wars.svg/1000px-Browser_Wars.svg.png
+        http://en.wikipedia.org/wiki/File:Usage_share_of_web_browsers_(Source_StatCounter).svg
+
+        http://vitamintalent.com/extra/infographics-viewer/web-standards.htm
+
+        http://evolutionofweb.appspot.com/
+
+        - Start of the Web
+            - Aug 6th, 1991 - Tim Berners-Lee released WorldWideWeb
+        - Rise of the Web as a platform
+            - Feb 1993 - Mosaic released: first truely graphical browser
+            - Mar 1993 - Commercial use of the Internet permitted
+            - Sep 1994 - W3C Consortium founded
+            - 1995 - Bill Gates sees Web as a platform threat to
+              Windows and pivots the company to focus on the Internet.
+              The original browser wars begin in earnest. Microsoft
+              "intends to cut off Netscape's air supply."
+            - 1995 - Internet Explorer 1.0.
+            - Dec 1995 - JavaScript ships with Netscape 2.0
+            - 1996 - CSS 1: some parts in IE 3.0
+            - 1997: HTML4 "standard" released
+        - Fall of the Web as a platform
+            - Oct 1997 - IE 4.0 bundled with Windows
+            - May 1998 - civil suite filed against Microsoft primarily
+              related to browser/OS integration.
+            - 1998: Netscape Navigator becomes open source as Mozilla.
+            - Oct 2001 - IE 6.0 released, bringing to a close the
+              previous web era. IE has nearly 100% market share.
+            - IE is stays above 60% until 2009.
+            - But the Web moves ahead in spite of browser stagnation
+            - Web 2.0: the read/write web
+            - W3C stuck in XHTML morrass.
+        - Rise of the Web Platform, part 2
+            - 2004: Mozilla and Opera fail to get W3C refocused on
+              HTML (instead of XHTML) and form the WHATWG (Web
+              Hypertext Application Working Group) to start work on
+              HTML5.
+            - Jun 2007 - iPhone release. The mobile web. Notably: no
+              Flash.
+            - 2007: W3C comes around and adopts WHATWG HTML5 as
+              starting point.
+            - Jan 2008: W3C releases first HTML5 working draft.
+            - Sept 2008 - Google releases Chrome on the world. Browser
+              is reframed once again as a platform instead of
+              a product.
+            - 2009: W3C quietly dumps XHTML 2.0 and focuses full
+              energy on HTML5 as it explodes into the community
+              consciousness.
+            - Apr 2010 - Steve Jobs issues "Thoughts on Flash"
+              manifesto in which he concludes that Flash is no longer
+              necessary due to HTML5.
+            - June 2011 - Microsoft demos Windows 8 Metro interface
+              which uses HTML/Javascript to build applications.
+
+        - A shorter history of the web (the evolution of the web)
+            http://www.mikealrogers.com/posts/a-new-direction-for-web-applications-.html
+
+            - Static Web
+                - Backend: Apache
+                - Static pages
+            - Generated Web
+                - Associated ideas: templating, LAMP
+                - Backend: Apache+CGI, PHP, Perl, Python.
+                - Generated/assembled static pages
+            - Read/Write Web
+                - Associated ideas: Web 2.0, DHTML, AJAX, MVC, blogs/RSS,
+                wikis, Semantic Web, Push, social web, crowd-sourcing
+                (wikipedia), 
+                - Backend: WSGI, Ruby on Rails, Django.
+                - Web sites become dynamic views of dynamic backend content
+            - Web Applications
+                - Associated terms: HTML5, mobile, cloud, 'native' vs webapp,
+                - Backend: Node.js, "cloud"
+                - Applications delivered via web but pull/push data from
+                many sources (HTTP, WebSockets, media devices, local
+                storage)
+
+
+    - Defining HTML5
+        - Making first class elements out of second class objects
+            - Java, ActiveX, Flash
+
+    - What is HTML5 anyways?
+        http://en.wikipedia.org/wiki/File:HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png
+
+        - Simple answer: "The W3C HTML5 specification"
+            - Not really! In many ways the W3C HTML5 describes what modern
+            browsers did 4 years ago. Great, but boring. Doesn't answer
+            why HTML5 is so interesting.
+
+        - Another simple answer: "The WHATWG HTML5 specification"
+            - Nope. "WHATWG HTML5" is no longer a thing. WHATWG maintains
+            an "HTML Living Stanard" document. Basically HTML-Next.
+
+        - Yet another: the HTML5+CSS+Javascript trifecta
+            - Still not quite: misses some of the most interesting
+            technologies already here or on the near horizon.
+
+        - Or how about: "HTML5 & related technologies"
+            http://platform.html5.org/
+            http://en.wikipedia.org/wiki/File:HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png
+
+        - What people really mean HTML5: The Web Platform in modern browsers.
+            - HTML5 is like Web 2.0: it's a name for a rapid paradigm
+            shift, rather than for the target.
+            - There is something new that is clearly happening, so we'll
+            use the "best" name available to identify it even though we
+            don't know what the destination will be.
+
+        - Mozilla: "The Open Web Platform" - obviously biased by
+          Mozilla's view of the world, but it certainly has some
+          merit.
+
+        - Not just HTML5, also:
+            - Fast and modern (ECMA-262) Javascript engines
+            - WebSockets API (W3C) and WebSocket protocol (IETF 6455)
+            - CSS3 (many separate specs)
+            - SVG 1.1/2.0
+            - WOFF
+            - Javascript binary types: Blobs and Array Buffers (Khronos)
+            - Directory, System and File APIs
+            - Local Storage
+            - Offline
+            - Geolocation and Orientation
+
+            - WebGL
+            - WebCL
+            - WebRTC/Stream APIs
+            - Web Audio and Audio Data APIs
+            - PageVisibility
+            - Web Notifications
+            - WebAPIs (mobile device hardware API grouping)
+
+
+
+
+
+    - HTML5: level0, level1, level2, level3
+
+        - level0 (ready)
+            - >  75% native
+            - ~ 100% with polyfills/shims
+            - foundational for HTML5, but in existance for years
+            - 0-99 HTML5Test score
+                - IE 9, FF 3.5, Chrome 4, Safari 4.0, Opera 10.5, iOS 3.2, Android 2.2
+        - level1 (ready)
+            - > 67% native support
+            - ~100% with polyfills/shims
+            - Over 90% CSS Acid 3 compliance
+            - 100-274 HTML5Test score
+                - IE 9, FF 3.5, Chrome 4, Safari 5.0, Opera 10.6, iOS 4.0, Android 3.0
+        - level2 (ready/almost ready with caveats)
+            - Latest from each vendor: many have polyfills/shims
+            - 275-374 HTML5Test score
+                - IE 10, FF 10, Chrome 12, Safari 5.1
+                - Future: Opera 11.6+, iOS 5.0+, Android 4.0+
+        - level3 (hold/evaluate)
+            - no IE support yet
+            - 375-475 HTML5Test score
+                - FF 10, Chrome 15
+                - Future: IE 11?, Safari 5.1+, Opera 11.6+, Android Chrome?
+
+    - What about IE 6-8: Chrome Frame
+
+    - Fast Javascript, the key HTML5 feature
+
+    - Polyfills (shims/fallbacks):
+        Think of a browsers as a wall with cracks and holes in it.
+        Polyfills smooth out the cracks and holes and give a nice smooth
+        wall. - Remy Sharp
+
+    - Vendor prefixes
+
+    - Show Chrome Javascript console (Web Developer)
+        - Also can work remotely
+
+
+2. HTML5/Web Application Technologies and APIs
+    - Broad categories: HTML, CSS, Javascript, Other (WebAPI, WebGL, WebCL, etc)
+
+    - 30+ technologies
+
+        New semantic elements
+            level0  [66/73]
+            W3C HTML5
+            9.0     3.0     4.0     3.1     9.0     3.2     2.1
+
+            - one of the largest parts of HTML5 spec proper, but also
+              one of the least sexy.
+
+        CSS @font-face
+            level0  [69/92]
+            5.5     3.5     4.0     3.2     10.0    3.2     2.2
+
+            http://www.apple.com/html5/showcase/typography/
+                - Has EOT, TTF, WOFF, SVG fallbacks
+
+            Font.js: http://pomax.nihongoresources.com/pages/Font.js/
+                - Dynamic fonts
+
+        CSS position:fixed
+            level0  [89/91]
+            7.0     2.0     4.0     3.1     9.0     5.0     2.2
+
+            Nizo: http://nizoapp.com/
+                - Fixed and dynamic absolute position
+            Yes I Said Yes: http://yesisaidyes.com/
+                - Static and dynamic fixed position
+                - Background image used for animation
+            http://davidappleyard.net/
+                - Switch on fixed while scrolling
+
+        Web Storage
+            level0  [88/88]
+            W3C HTML5 adjunct
+            8.0     2.0     4.0     4.0     10.5    3.2     2.1
+
+            - like cookies, but more transactional and 5Mb vs 4kb per domain
+            - sessionStorage - per session
+            - localStorage - persistent across sessions
+
+            http://slides.html5rocks.com/#web-storage
+
+            -----------------------------------------------------------
+            localStorage.setItem('someKey', someValue);
+            localStorage.getItem('someKey'); // value
+            onstorage, onstoragecommit events?
+            -----------------------------------------------------------
+
+        2D Canvas
+            level0  [71/73]
+            W3C HTML5 adjunct
+            9.0     2.0     4.0     3.1     9.0     3.2     2.1
+
+            http://ie.microsoft.com/testdrive/Performance/IrishSpring/
+            http://www.catuhe.com/msdn/canvas/tunnel.htm            
+            http://ie.microsoft.com/testdrive/Graphics/TouchEffects/
+            http://ie.microsoft.com/testdrive/Performance/ParticleAcceleration/
+
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_canvas.htm
+                - Shows sample code and results
+
+            U.S. Wind Map:
+                http://hint.fm/wind/index.html
+
+            3D sketch using 2D canvas:
+                http://hakim.se/experiments/html5/sketch/
+
+            Coil game:
+                http://hakim.se/experiments/html5/coil/    
+
+
+            Polyfills for IE 6-8: excanvas, Flashcanvas
+
+        CSS3 media queries
+            level0  [72/72]
+            9.0     3.5     4.0     3.1/4.0 9.5     3.2     2.1
+
+            - The key element of response web design.
+
+            http://www.anderssonwise.com/
+                - follows the 3-screen model
+            http://thinkvitamin.com/
+            http://forefathersgroup.com/
+
+            IE 6-8 polyfills:
+                css3-mediaqueries-js: http://code.google.com/p/css3-mediaqueries-js/
+                Respond.js: https://github.com/scottjehl/Respond
+
+
+        CSS3 border radius
+            level1  [71/71]
+            9.0     2.0/3.0 4.0     3.1     10.5    3.2     2.1
+
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_border-radius.htm
+            http://css3pie.com/
+
+            IE6-8 Polyfills:
+                CSS3 PIE: http://css3pie.com/
+
+
+        CSS3 transforms
+            level1  [71/71]
+            9.0     3.5     4.0     3.1     10.5    3.2     3.0
+
+            - Scale, rotation, translation, skew
+
+            http://www.useragentman.com/tests/cssSandpaper/cube3.html
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_2d-transforms.htm
+
+            IE6-8 Polyfills:
+                Tranformie: https://github.com/pbakaus/transformie
+                cssSandpaper: http://www.useragentman.com/blog/2010/03/09/cross-browser-css-transforms-even-in-ie/
+
+
+        basic SVG
+            level1  [71/71]
+            9.0     2/3     4.0     3.1/3.2 9.0     3.2     3.0
+
+            http://raphaeljs.com/github/impact.html
+            http://raphaeljs.com/world/
+
+            IE6-8 Polyfill:
+                Raphael.js: http://raphaeljs.com
+
+
+        <video>
+            level1  [70/71]
+            W3C HTML5
+            9.0     3.5     4.0     4.0     10.5    3.2     2.3
+
+            http://vimeo.com/39959962
+                - Shows custom HTML5 controls
+            http://studio.html5rocks.com/#Cube
+                - <video> + CSS Transforms
+                - Reading out data and rendering ASCII art
+            http://craftymind.com/factory/html5video/CanvasVideo.html
+                - Canvas
+                - Displaying and manipulating video content in canvas
+
+            Custom controls tutorial:
+                http://dev.opera.com/articles/view/custom-html5-video-player-with-css3-and-jquery/
+
+            IE6-8 Polyfills: 
+                html5media: https://github.com/etianen/html5media
+                MediaElement.js: http://mediaelementjs.com/
+                Video For Everybody: http://camendesign.com/code/video_for_everybody
+
+        <audio>
+            level1  [70/70]
+            W3C HTML5
+            9.0     3.5     4.0     4.0     10.5    4.0     2.3
+
+            http://studio.html5rocks.com/samples/audio-podcast/index.html
+                - Custom controls, CSS border-radius
+            http://www.apple.com/html5/showcase/audio/
+            http://randallagordon.com/jaraoke/#
+            http://paulirish.com/demo/annotate
+
+            IE6-8 Polyfills: 
+                html5media: http://html5media.info/
+                MediaElement.js: http://mediaelementjs.com/
+
+        geolocation
+           level1  [70/70]
+           9.0     3.5     4.0     5.0     10.6    3.2     2.1
+
+           http://studio.html5rocks.com/samples/geo/index.html
+
+           Polyfills:
+                webshim: https://github.com/aFarkas/webshim
+                https://github.com/manuelbieh/Geolocation-API-Polyfill
+
+                                
+
+
+        WOFF
+            level2  [66/66]
+            9.0     3.6     5.0     5.1     11.1    5.0     X
+
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_woff.htm
+            http://www.google.com/webfonts
+                - Big collection of free WOFF fonts
+
+            - font-face supports fallback formats
+
+        inline SVG
+            level2  [62/62]
+            9.0     4.0     7.0     5.1     11.6    5.0     3.0
+
+            http://www.amplesdk.com/examples/markup/svg/grapes/
+
+
+        offline apps / cache manifest
+            level2  [56/60]
+            W3C HTML5
+            10.0    3.0     4.0     4.0     10.6    3.2     2.1
+
+            http://html5demos.com/offline
+                - detect online offline condition
+            http://everytimezone.com/
+
+        Web Workers
+            level2  [57/57]
+            W3C HTML5 adjunct
+            10.0    3.5     4.0     4.0     10.6    5.0     X
+
+            http://nerget.com/rayjs-mt/rayjs.html
+            http://java-script.limewebs.com/demos/swarm/buzz.html
+
+
+        CSS3 transitions
+            level2  [56/56]
+            10.0    4.0     4.0     3.1     10.5    3.2     2.1
+
+            - Simple animation between two CSS settings
+
+            http://media.24ways.org/2009/14/2/index.html
+            http://thinkvitamin.com/code/sexy-interactions-with-css-transitions/
+            http://matthewlein.com/ceaser/
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_transitions.htm
+
+        CSS3 animations
+            level2  [52/54]
+            10.0    5.0     4.0     4.0     12.0    3.2     2.1/4.0
+
+            - More sophisticated keyframe animation
+
+            http://robertnyman.com/css3/css-animations/css-animations-percentage.html
+            http://www.webkit.org/blog-files/leaves/index.html
+            http://ie.microsoft.com/testdrive/Performance/BetaFishIE/
+                - SVG for fish
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_animations.htm
+
+        history
+            level2  [50/55]
+            W3C HTML5
+            10.0    4.0     5.0     ?       11.5    5.0     ?
+
+            - enables proper infinite scroll:
+              http://warpspire.com/talks/responsive/
+
+            http://robertnyman.com/html5/history-api/
+            http://warpspire.com/experiments/history-api/
+                - infinite scroll
+            http://lab.simurai.com/stars/
+                - History API, back/forward without page reload
+                - Also SVG effects for HTML
+
+
+        WebSockets
+            level2  [43/54]
+            W3C HTML5 adjunct
+            10.0    8.0     4/14    5/?     ?       4.2/?   X
+
+            - API and protocol
+            - two different protocols: Hixie and HyBi/IETF
+
+            http://rumpetroll.com/
+                - Canvas for rendering
+            http://wordsquared.com/
+
+            Polyfill:
+                web-socket-js: https://github.com/gimite/web-socket-js
+                socket-io: http://socket.io
+
+        SVG filters
+            level2 [53/53]
+            10.0    3.0     5.0/8.0 6.0     9.0     X       X
+
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_svg-filter-effects.htm
+
+
+        File Reader
+            level2  [50/50]
+            10.0    3.6     6.0     X       11.1    X       3.0
+
+            - File input on forms could only upload via a server.
+            - FileReader allows the client side to read the file
+              without first sending it to a server.
+
+            http://www.html5rocks.com/en/tutorials/file/dndfiles/
+                - Also demonstrates Blob Data
+
+        File
+            level2  [26/35]
+            10.0    3.6     6.0     5.1     11.1    X       3.0
+
+            http://html5demos.com/file-api-simple
+                - Also File Reader
+
+        Blob Data
+            level2  [50/50]
+            10.0    4.0     5.0     5.1     11.1    X       3.0
+
+            http://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-slicing-files
+                - Blob slicing from FileReader
+
+        Typed Arrays
+            level2  [52/52]
+            10.0    4.0     7.0     5.1     11.6    4.2     4.0
+
+            - Native binary type data for Javascript
+            - Previously, binary data had to be encoded somehow
+                - binary coded string
+                - normal arrays of values 0-255
+            - Building blocks of many level2, level3 features
+                - 2D canvas imageData
+                - direct binary data over WebSockets
+                - File Reader/Writer/System APIs
+                - audio data
+                - WebGL
+                - Web Worker Transferable Objects
+                    - super fast communication between workers
+
+            Binary File Inspector:
+                http://ie.microsoft.com/testdrive/HTML5/TypedArrays/
+                    - Also FileReader
+
+        requestAnimationFrame
+            level2  [45/45]
+            10.0    4.0     10.0    X       X       X       X
+
+            - Alternative to setTimeout, indicates to browser that
+              callback is for animation
+            - Aware of when window/tab is visible
+            - Saves CPU/battery life
+            - Called when browser is ready to display next frame
+
+            http://mrdoob.com/lab/javascript/requestanimationframe/
+
+            RequestAnimationFrame.js:
+                http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+    
+        indexedDB
+            level2  [45/45]
+            10.0    4.0     11.0    X       X       X       X
+
+            - Sits somewhere between full-on SQL and unstructured key-value pairs in localStorage.
+            - Values are stored as structured JavaScript objects, and an indexing system facilitates filtering and lookup.
+            - Asynchronous, with moderately granular locking
+            - Joining normalized data is a completely manual process.
+
+            http://ie.microsoft.com/testdrive/HTML5/Cookbook/
+
+
+        CSS3 3D transforms
+            level2  [43/43]
+            10.0    10.0    12.0    4.0     X       3.2     3.0
+
+            http://desandro.github.com/3dtransforms/examples/perspective-03.html
+            http://desandro.github.com/3dtransforms/examples/cube-02-show-sides.html
+            http://desandro.github.com/3dtransforms/examples/carousel-02-dynamic.html
+            http://www.webkit.org/blog-files/3d-transforms/poster-circle.html
+            http://www.webkit.org/blog-files/3d-transforms/morphing-cubes.html
+            http://www.joelambert.co.uk/cube3d/
+            http://www.is-real.net/experiments/css3/wonder-webkit/
+            http://demos.jackadam.net/webkit_molecule/
+            http://lab.hakim.se/scroll-effects/
+
+            Guide: http://24ways.org/2010/intro-to-css-3d-transforms
+
+
+
+        CSS Flexbox
+            level2  [13/58]
+            10.0    2.0     4.0     3.1     X       3.2     2.1
+
+            http://icondeposit.wdfiles.com/local--files/blog%3Apure-css3-flexbox-tutorial/CSS3%20Flexbox.html
+            http://www.gwilym.com/flexbox/example-1.html
+            http://www.gwilym.com/flexbox/example-2.html
+            http://www.gwilym.com/flexbox/example-4.html
+            http://www.gwilym.com/flexbox/example-5.html
+            http://www.gwilym.com/flexbox/example-6.html
+            http://www.gwilym.com/flexbox/example-7.html
+            http://www.gwilym.com/flexbox/example-8.html
+            http://www.gwilym.com/flexbox/example-9.html
+            http://www.gwilym.com/flexbox/example-10.html
+
+            Polyfills:
+               Flexie: http://github.com/doctyper/flexie 
+
+
+
+        Form Features
+            level2  [03/54]
+            W3C HTML5
+            10.0/?  4.0/?   4.0/?   4.0/?   9.0     4.0/5.0 X
+
+            http://slides.html5rocks.com/#new-form-types
+            http://peter.sh/examples/?/html/meter-progress.html
+            http://afarkas.github.com/webshim/demos/demos/webforms.html
+            http://lab.simurai.com/umbrui/
+                - HTML5 form elements with sophisticated CSS styling
+
+            Polyfills:
+                http://code.google.com/p/webforms2/
+                https://github.com/freqdec/fd-slider
+                https://github.com/jo/JSColor
+                https://github.com/ryanseddon/H5F
+
+        Touch events
+            level2  [22/23]
+            10.0    4.0     X       X       X       3.2     2.1
+
+                                
+
+        Device Orientation
+            level3  [30/51]
+            X       3.6     7.0     X       X       4.2     3.0
+
+            http://hakim.se/experiments/css/holobox/
+                - Also CSS 3D
+
+            http://mrdoob.com/projects/chromeexperiments/ball_pool/
+                - Canvas for each ball being repositioned using
+                  box2d.js physics engine
+
+        Server-sent events
+            level3  [52/53]
+            X       6.0     6.0     5.0     9.0     4.0     X
+            W3C HTML5 adjunct
+
+            - Server push (without client polling)
+            - Sites between long-poll and WebSockets
+
+            http://googlecodesamples.com/html5/sse/sse.html
+
+            Polyfills:
+                https://github.com/remy/polyfills/blob/master/EventSource.js
+                https://github.com/Yaffle/EventSource/blob/master/eventsource.js
+
+        Shared Web Workers
+            level3  [35/35]
+            X       X       4.0     5.0     10.6    5.0     X
+            W3C HTML5 adjunct
+
+            - Like Web Workers, but web worker instances can be shared
+              between tabs from the same domain
+
+            http://www.whatwg.org/demos/workers/shared/003/test.html
+
+
+        CSS Filter Effects (SVG effects for HTML)
+
+
+        WebGL (3D canvas)
+            level3  [00/48]
+            X       4.0     8.0     5.1     12      X       X
+
+            Shaders:
+                http://hakim.se/experiments/webgl/shaders/03/
+            Globe population:
+                http://workshop.chromeexperiments.com/globe
+            Clouds:
+                http://mrdoob.com/131/Clouds
+            Depth of Field:
+                http://mrdoob.com/97/Depth_of_Field
+            Quake Level:
+                http://media.tojicode.com/q3bsp/
+            Particles:
+                http://hakim.se/experiments/webgl/particles/01/
+
+        Web audio / audio data
+            level3  [00/45]
+            X       4.0     10.0    X       X       X       X
+
+            http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#40
+            http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#41
+            http://www.iquilezles.org/apps/soundtoy/index.html
+            http://static.echonest.com/BohemianRhapsichord/index.html
+                - analyze/sort sounds
+            http://www.htmlfivewow.com/demos/audio-visualizer/index.html
+                - sound analysis
+
+        full screen
+            level3  [0/39]
+            X       10.0    15.0    5.1     X       X       X
+
+            http://html5-demos.appspot.com/static/fullscreen.html
+            http://robnyman.github.com/fullscreen/
+            http://marblesoccer.com/
+
+        web notifications
+            level3  [0/27]
+            X       5.0     X       X       X       X       X
+
+            http://www.html5rocks.com/en/tutorials/notifications/quick/
+            http://dangercove.github.com/html5-notifications/
+
+        Filesystem & FileWriter API
+            level3  [27/27]
+            X       X       8.0     X       X       X       X
+
+            http://www.htmlfivewow.com/demos/terminal/terminal.html
+                - also has WebGL 3D mode
+
+    Other level3+:
+
+        - WebAPIs
+
+        - WebRTC/getUserMedia
+
+        - WebCL
+
+        - GamePad API
+
+        - Mouselock
+
+
+    Pulling it together:
+
+        http://lab.simurai.com/monster/
+            - Several CSS effects
+            - audio tags
+
+        CSS Analglyph 3D effect:
+            http://lab.simurai.com/css3d/
+                - one line of CSS (text-shadow)
+                - contenteditable (show edit and spell check)
+
+        GateOne (maybe not on Mac)
+            - WebSockets
+
+        jPlayer
+            - video, audio tags
+            - CSS styled customer controls
+            - automatic media format selection for different devices
+
+        Inline SVG with normal app UI:
+            https://www.circuitlab.com/editor/
+
+        3D Tin (WebGL + styled UI):
+            http://www.3dtin.com/
+
+        PDF.js:
+            http://mozilla.github.com/pdf.js/web/viewer.html
+            - multiple canvases
+            - binary data?
+
+        http://airtightinteractive.com/demos/js/reactive/
+            - Web Audio to analyze audio
+            - WebGL visualization
+
+        noVNC
+            - WebSockets
+            - Canvas
+            - media queries
+            - Touch events
+
+3. Native vs Web Applications 
+    - Show what's possible
+
+4. Resources/blogs/people, best practices, more demo
+    - Responsive web design
+        http://www.useit.com/alertbox/3-screens-transmedia.html
+
+
+
+- History of web and HTML5
+- Defining HTML5
+- Demos: What's possible with HTML5
+- The most important parts of HTML5
+- Overview of HTML5 and related technologies and APIs
+* Web applications vs "native"
+- Common challenges and solutions
+    - cross-browser
+    - DOM vs Canvas
+    - mobile and response/adaptive design
+- Tools and resources
+    - use the source Luke (View Source)
+        - copy
+    - No NIH. Don't re-invent the wheel. Somebody else has probably
+      already thought of it AND implemented it.
+- Key players in HTML5
+- Future of HTML5
+- Blogs and people to follow
+
+- Walkthrough: building multiplayer network game
+    - Canvas, WebSockets
+    - Best practices:
+        - Feature/object detection: requestAnimationFrame
+    - Debugging/profiling
+
+
+
+
+
