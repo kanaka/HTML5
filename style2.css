@@ -9,7 +9,7 @@ body {
 /** STEP STYLES **/
 .step {
     width: 900px;
-    height: 500px;
+    height: 600px;
 
     display: block;
     padding: 40px 60px;
@@ -27,6 +27,10 @@ body {
 .large-step {
     width: 1024px;
     height: 780px;
+}
+
+.tall-step {
+    height: 700px;
 }
 
 .example {

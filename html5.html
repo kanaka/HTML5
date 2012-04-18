@@ -21,26 +21,608 @@
 
 <div id="simple">
 
-        <div id="web-evolution" class="step large-step" data-x="-3000" data-y="0">
-            Evolution of the Web:
-            <input type="button" value="Load" onclick="load('#d1', 'http://evolutionofweb.appspot.com/')">
-            <input type="button" value="Unload" onclick="unload('#d1')">
-            <iframe id="d1" width="100%" height="100%">
+        <!--
+	<div id="overview" class="step" data-x="2000" data-y="1000" data-z="0" data-scale="7">
+	</div>
+        -->
+
+
+        <!-- *************************************************************** -->
+
+        <!-- Mac PC Web -->
+        <div id="mac-pc" class="step" data-x="-3000" data-y="-6000">
+            <div style="width:100%; height: 100%;
+                        text-align: center; margin-top: 60px;">
+            <img src="imgs/mac_pc.png">
+            <p>source: xkcd.com</p>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div id="about-me" class="step tall-step" data-x="-1500" data-y="-6000">
+            <h1>About Me</h1>
+            <p data-jmpress="fade">
+            Principal Software Engineer at <a href="http://lonocloud.com">LonoCloud.com</a>
+            </p>
+            <p data-jmpress="fade">
+            Live in Duncanville, TX.
+            </p>
+            <div data-jmpress="fade">
+            I have an a beautiful and amazing wife:
+            <ul>
+                <li>Clinical research at an infectious disease practice in Dallas
+                <li>Part-time lecturer at Baylor in their graduate and
+                undergraduate Nursing program.
+            </ul>
+            </div>
+            <div data-jmpress="fade">
+            <p>We have just adopted a beautiful little girl:</p>
+            <img height="350" src="imgs/mari.jpg">
+            </div>
+	</div>
+
+        <!-- background -->
+        <div id="background" class="step tall-step" data-x="0" data-y="-6000">
+            <h1>(Abbreviated) Technical Background</h1>
+            <ul>
+            <li data-jmpress="fade">Contracted to build a <strong>corporate website</strong> (1996)
+            <li data-jmpress="fade">Summer job at <strong>Texas Instruments</strong>: built content management Intranet site (1997)
+
+            <br><br>
+
+            <li data-jmpress="fade"><strong>Started and ran a small business</strong>: hooked up students to the Internet (1998)
+            <li data-jmpress="fade">Built an advanced ticketing, work tracking and task management Intranet site for CS deptartment.
+            <li data-jmpress="fade"><strong>Presented at 2000 LISA USENIX conference</strong> on an open source project that we developed for automated management of large computer science network.
+            <li data-jmpress="fade"><strong>Compaq</strong>: Tru64 UNIX hardware drivers
+            <li data-jmpress="fade"><strong>HP</strong>: clustering and file-system
+            <li data-jmpress="fade"><strong>Gentoo Developer</strong>: Developer oriented Linux distribution
+            <li data-jmpress="fade"><strong>RedHat</strong>: added Solaris support to the RHN system
+            <li data-jmpress="fade"><strong>SiCortex</strong>: some of everything: bootloaders, build system, cross-compilers, hardware drivers, low-level libraries, automated test suite, release engineering, etc
+            <li data-jmpress="fade"><strong>SIL International</strong> (non-profit linguistic organization): network engineering, process automation, virtualized remote access infrastructure and software.
+            <li data-jmpress="fade"><strong>Sentry Data Systems</strong>: built IaaS (Infrastructure as a Service) platform comparable to Amazon EC2 in functionality but targeting needs of the healthcare industry.
+
+            <br><br>
+
+            <li data-jmpress="fade"><strong>noVNC</strong>: open source web application for plugin-free access to console of virtual servers.
+            <li data-jmpress="fade">Participated in the <strong>IETF HyBi working group</strong> developing the first version of the WebSocket protocol.
+            <li data-jmpress="fade"><strong>HTML5 specification</strong>: miscellaneous contributions 2D Canvas and WebSockets API.
+            <li data-jmpress="fade"><strong>LonoCloud</strong>: developing next generation PaaS (Platform as a Server) using the Clojure language for the core platform.
+            </ul>
+	</div>
+
+
+
+
+        <!-- *************************************************************** -->
+
+
+        <!-- Edge of HTML5 -->
+        <div id="edge" class="step" data-x="0" data-y="-5000">
+            <h1>The Edge of HTML5</h1>
+
+            <div data-jmpress="fade">
+            <h3>Let's Dive Right In:</h3>
+            <ul>
+                <li><a href="http://alteredqualia.com/three/examples/webgl_terrain_dynamic.html" target="possibleex1">Dynamic Terrain Flyover</a>
+                <li><a href="http://madebyevan.com/webgl-water/" target="possibleex2">Water Pool</a>
+                <li><a href="http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#18" target="possibleex3">Speech input</a>
+                <li><a href="http://browserquest.mozilla.org/" target="possibleex4">BrowserQuest MMO</a>
+                <li><a href="http://www.htmlfivewow.com/demos/audio-visualizer/index.html" target="possibleex5">Audio Analysis and Visualization</a>
+                <li><a href="http://mozilla.github.com/pdf.js/web/viewer.html" target="possibleex6">pdf.js</a>
+                <li><a href="http://media.tojicode.com/q3bsp/" target="possibleex7">Rendered Quake Level</a>
+
+                <br>
+
+                <li><a href="http://mrdoob.com/projects/chromeexperiments/ball_pool/" target="possibleex8">Ball Pool</a>
+                <li><a href="http://noVNC.com" target="possibleex9">noVNC</a>
+            </ul>
+            </div>
+	</div>
+
+
+        <!-- What is HTML5? -->
+        <div id="what-is-html5" class="step" data-x="1500" data-y="-5000">
+            <h1>What is HTML5?</h1>
+
+            <div data-jmpress="fade">
+            <p>Unfortunately it's not simple</p>
+            <p>So a bit of history is required</p>
+            </div>
+	</div>
+
+        <!-- History 1991 -->
+        <div id="history1" class="step" data-x="3000" data-y="-5000">
+            <div class="html5-timeline">
+                1991
+            </div>
+
+            <h1>History of HTML5</h1>
+            <h2>The Start of the Web</h2>
+
+            <div data-jmpress="fade">
+            <p><strong>Aug 6th, 1991</strong>: From CERN, Tim Berners-Lee releases <a href="http://www.w3.org/History/1994/WWW/Journals/CACM/screensnap2_24c.gif" target="WorldWideWeb">WorldWideWeb</a> on the wide world.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p>Technically we should start much earlier, but that's when things get interesting (for us).</p>
+            </div>
+            <div data-jmpress="fade">
+            <p>Must have been a good year: Linus Torvalds announced Linux 19 days later.</p>
+            </div>
+	</div>
+
+        <!-- original-browser -->
+        <div id="history1a" class="step" data-x="4500" data-y="-5000">
+            <h1>WorldWideWeb - the original browser</h1>
+
+            <p><img height="400" src="http://www.w3.org/History/1994/WWW/Journals/CACM/screensnap2_24c.gif"></p>
+            <div data-jmpress="fade">
+            <p>We've come a long way!</p>
+            </div>
+	</div>
+
+        <!-- History 1993-1997 -->
+        <div id="history2" class="step" data-x="6000" data-y="-5000">
+            <div class="html5-timeline">
+                1993-1997
+            </div>
+
+            <h1>History of HTML5</h1>
+            <h2>Rise of the Web as a Platform</h2>
+
+            <div data-jmpress="fade">
+            <p><strong>Feb 1993</strong>: Mosaic browser released; first truely graphical browser</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Mar 1993</strong> First commercial use of the Internet permitted</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Sep 1994</strong> W3C formed to steward web technologies and standards </p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>1995</strong> Bill Gates sees Web as a platform threat to
+              Windows and pivots the company to focus on the Internet.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p> Microsoft "intends to cut off Netscape's air supply." The
+                original browser wars begin. </p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Dec 1995</strong> Javascript ships with Netscape 2.0</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>1996</strong> CSS 1: some parts ship in IE 3.0</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>1997</strong> HTML4 "standard" released</p>
+            </div>
+	</div>
+
+        <!-- History 1997-2002 -->
+        <div id="history3" class="step" data-x="7500" data-y="-5000">
+            <div class="html5-timeline">
+                1997-2007
+            </div>
+
+            <h1>History of HTML5</h1>
+            <h2>Fall of the Web as a Platform</h2>
+
+            <div data-jmpress="fade">
+            For the next 10 years, the web stagnates as a platform.
+            </div>
+
+            <div data-jmpress="fade">
+            <p><strong>Oct 1997</strong>: IE 4.0 bundled with Windows for first time</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>May 1998</strong>: civil suite filed against Microsoft primarily
+              related to browser/OS integration.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>1998</strong>: Netscape Navigator becomes open sourced as Mozilla.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Oct 2001</strong>: IE 6.0 released</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>2002</strong>: IE achives over 90% marketshare.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p>IE stays above 60% until 2009.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p>W3C is stuck in an XML/XHTML morass.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p>But the Web moves ahead in spite of browser stagnation by repurposing old functonality and growing on the server-side.</p>
+            </div>
+
+	</div>
+
+        <!-- history: browser share -->
+        <div id="history-browser-share" class="step large-step" data-x="9000" data-y="-5000">
+            <h1>History of HTML5</h1>
+
+            <p><img height="600" src="imgs/browser-wars.png"></p>
+            <p>source: wikimedia</p>
+	</div>
+
+        <!-- history: engine share -->
+        <div id="history-engine-share" class="step large-step" data-x="10500" data-y="-5000">
+            <h1>History of HTML5</h1>
+
+            <p><img height="500" src="imgs/engine-share.png"></p>
+            <p>source: wikimedia</p>
+	</div>
+
+
+        <!-- History 2004-Present -->
+        <div id="history4" class="step tall-step" data-x="12000" data-y="-5000">
+            <div class="html5-timeline">
+                2004-Present
+            </div>
+
+            <h1>History of HTML5</h1>
+            <h2>Rise of the Web as a Platform, Part 2</h2>
+
+            <div data-jmpress="fade">
+            <p><strong>2004</strong>: Mozilla and Opera jointly propose to the W3C that it refocus on
+              HTML (instead of XHTML). Proposal fails.</p>
+            </div>
+            <div data-jmpress="fade">
+            In response, Mozilla and Opera form the WHATWG (Web
+            Hypertext Application Working Group) to start work on HTML5.
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Jun 2007</strong>: iPhone released. Innaguarates the mobile web.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p>Notably: no Flash.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>2007</strong>: W3C comes around. Adopts
+            WHATWG's HTML5 as a starting point.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Jan 2008</strong>: W3C releases first HTML5 working draft.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Sep 2008</strong>: Google releases Chrome on
+            the world. Browser is reframed once again as a platform
+            instead of a product.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>2009</strong>: W3C quietly dumps XHTML 2.0 and
+            focuses full energy on HTML5 (the cancer is excised).
+            HTML5 explodes into the community consciousness.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>Apr 2010</strong>: Steve Jobs issues "Thoughts
+            on Flash" manifesto in which he concludes that Flash is no
+            longer necessary due to HTML5.</p>
+            </div>
+            <div data-jmpress="fade">
+            <p><strong>June 2011</strong>: Microsoft demos Windows
+            8 Metro interface. HTML/Javascript/CSS is positioned as
+            primary way to build new Windows applications.</p>
+            </div>
+	</div>
+
+        <div id="history-visual" class="step example-large" data-x="13500" data-y="-5000">
+            <h1>History of HTML5</h1>
+            <h3>The Visual View</h3>
+            <input type="button" value="Load" onclick="load('#evolvex', 'http://evolutionofweb.appspot.com/')">
+            <input type="button" value="Unload" onclick="unload('#evolvex')">
+            </h3>
+            <iframe id="evolvex" width="99%" height="82%">
+            </iframe>
+        </div>
+
+        <div id="history-logical" class="step tall-step" data-x="15000" data-y="-5000">
+            <h1>History of HTML5</h1>
+            <h3>The Functional View</h3>
+            <div data-jmpress="fade">
+                <strong>The Static Web</strong>
+                <ul>
+                    <li> Static pages
+                    <li> <strong>Backend</strong>: Apache
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <strong>The Generated Web</strong>
+                <ul>
+                    <li> Static web pages that are generated/assembled 
+                    <li> <strong>Associated ideas</strong>: templating, LAMP stack
+                    <li> <strong>Backend</strong>: Apache+CGI, PHP, Perl, Python
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <strong>The Read/Write Web</strong>
+                <ul>
+                    <li> Web sites become views of dynamic backend content
+                    <li> <strong>Associated ideas</strong>: Web 2.0, DHTML, AJAX, MVC,
+                    blogs/RSS, wikis, Semantic Web, Push, social web,
+                    crowd-sourcing (wikipedia).
+                    <li> <strong>Backend</strong>: WSGI, Ruby on Rails, Django
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <strong>Web Applications</strong>
+                <ul>
+                    <li> Applications delivered via the web but
+                    pull/push data from many sources (HTTP,
+                    WebSockets, media devices, local storage)
+                    <li> <strong>Associated ideas</strong>: HTML5, mobile, cloud,
+                    'native' app vs webapp.
+                    <li> <strong>Backend (optional)</strong>: Node.js, "cloud", big
+                    data, NoSQL (CouchDB, MongoDB).
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- *************************************************************** -->
+
+
+
+
+        <!-- *************************************************************** -->
+
+
+        <!-- levels -->
+        <div id="levels" class="step" data-x="0" data-y="-3000">
+            <h1>HTML5 Feature Levels</h1>
+            <div data-jmpress="fade">
+                <h2>Level0</h2>
+                <ul>
+                    <li> The past
+                    <li> Basically pre-HTML5 but foundational
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level1</h2>
+                <ul>
+                    <li> The present
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level2</h2>
+                <ul>
+                    <li> The near future
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level3</h2>
+                <ul>
+                    <li> The farther future
+                </ul>
+            </div>
+	</div>
+
+        <!-- levels-reach -->
+        <div id="levels-reach" class="step tall-step" data-x="1500" data-y="-3000">
+            <h1>HTML5 Browser Reach by Level</h1>
+            <div data-jmpress="fade">
+                <h2>Level0</h2>
+                <ul>
+                    <li> Over 75% (higher with polyfills)
+                    <li> Near 100% by not including IE 6-8
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level1</h2>
+                <ul>
+                    <li> Over 70% (higher with polyfills)
+                    <li> Approaching 100% not including IE 6-8
+                    <li> Polyfills and/or fallbacks exist
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level2</h2>
+                <ul>
+                    <li> 25%-66% (polyfill often available)
+                    <li> Exists in IE 9 or 10 (which means other browsers soon)
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level3</h2>
+                <ul>
+                    <li> Exists in at least one browser
+                    <li> No commitment from MS for IE
+                </ul>
+            </div>
+	</div>
+
+        <!-- levels-score -->
+        <div id="levels-score" class="step" data-x="3000" data-y="-3000">
+            <h1>HTML5 Levels vs HTML5Test Score</h1>
+            <p> <a href="http://html5test.com" target="html5test">html5test.com</a> provides
+            a numerical score based on HTML5 feature support.</a>
+            <div data-jmpress="fade">
+                <h2>Level0</h2>
+                <ul>
+                    <li> 0-99
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level1</h2>
+                <ul>
+                    <li> 100-274
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level2</h2>
+                <ul>
+                    <li> 275-349
+                </ul>
+            </div>
+            <div data-jmpress="fade">
+                <h2>Level3</h2>
+                <ul>
+                    <li> 350-500
+                </ul>
+            </div>
+	</div>
+
+        <!-- levels -->
+        <div id="levels-browsers" class="step tall-step" data-x="4500" data-y="-3000">
+            <h1>HTML5 Browser Levels</h1>
+            <p> Browsers can be loosely grouped into levels based on the
+            level features they support and their HTML5Test score.</p>
+            <div data-jmpress="fade">
+                <h2>Level0</h2>
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.5<li>4.0<li>4.0<li>10.5<li>3.2<li>2.2
+                </ul>
+            </div>
+            <br>
+            <div data-jmpress="fade">
+                <h2>Level1</h2>
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.5<li>4.0<li>5.0<li>10.6<li>4.0<li>3.0
+                </ul>
+            </div>
+            <br>
+            <div data-jmpress="fade">
+                <h2>Level2</h2>
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>10<li>12<li><div class="partial">5.1</div><li><div class="partial"><div class="partial">11.6</div><li><div class="partial">5.0</div><li><div class="partial">4.0</div>
+                </ul>
+            </div>
+            <br>
+            <div data-jmpress="fade">
+                <h2>Level3</h2>
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li><div class="warn">X</div><li><div class="partial">10</div><li>15<li><div class="partial">5.1</div><li><div class="partial">12+</div><li><div class="warn">X</div><li><div class="warn">X</div>
+                </ul>
+            </div>
+	</div>
+
+        <!-- browser-score-time -->
+        <div id="browser-score-time" class="step large-step" data-x="6000" data-y="-3000">
+            <h2>Browser Capability (HTML5Test Score) Over Time</h2>
+            <iframe src="browser-time-score.html" width="100%" height="95%">
             </iframe>
 	</div>
 
-	<div id="overview" class="step" data-x="2000" data-y="1000" data-z="0" data-scale="7">
+        <!-- browser-score-share -->
+        <div id="browser-score-share" class="step large-step" data-x="7500" data-y="-3000">
+            <h2>Browser Capability (HTML5Test Score) vs Market Share</h2>
+            <iframe src="browser-score-share.html" width="100%" height="95%">
+            </iframe>
 	</div>
+
+        <!-- browser-level-share -->
+        <div id="browser-level-share" class="step large-step" data-x="9000" data-y="-3000">
+            <h2>Browser HTML5 Feature Level vs Market Share</h2>
+            <iframe src="browser-score-share-stack.html" width="100%" height="95%">
+            </iframe>
+	</div>
+
+        <!-- Chrome Frame -->
+        <div id="chrome-frame" class="step" data-x="10500" data-y="-3000">
+            <h1>But what about IE 6, 7 and 8?</h1>
+            <div data-jmpress="fade">
+            <a href=""><h2>Chrome Frame!</h2></a>
+            <img height="200" src="imgs/chrome_frame-430.png">
+            </div>
+            <p data-jmpress="fade">
+            Replaces Internet Explorer's rendering engine with Chrome's engine.
+            </p>
+            <p data-jmpress="fade">
+            Does not require administrative priviledge to install.
+            </p>
+            <p data-jmpress="fade">
+            Or use polyfills and fallbacks (but beware terrible
+            Javascript performance).
+            </p>
+
+	</div>
+
+
+        <!-- *************************************************************** -->
+
+
+        <!-- Title -->
+        <div id="title" class="step" data-x="-1500" data-y="-1000">
+            <h1>HTML5 Feature Overview</h1>
+            <p data-jmpress="fade">
+            HTML5 APIs and Technologies
+            </p>
+            <p data-jmpress="fade">
+            HTML5+ APIs and Technologies
+            </p>
+            <p data-jmpress="fade">
+            Related APIs and Technologies
+            </p>
+            <p data-jmpress="fade">
+            Not comprehensive but hopefully representative.
+            </p>
+	</div>
+
+        <!-- TODO: other intro material: Chrome Developer Console,
+        vendor prefixes, Fast Javascript -->
+
+        <!-- Sample Slide -->
+        <div id="sample" class="step" data-x="0" data-y="-1000">
+            <div style="position: relative; top: -35px; left: -50px;">
+                Sample Feature Slide
+            </div>
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.6<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">levelX</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/">W3C HTML5</a></div>
+            </div>
+
+            <h1>Feature Name</h1>
+            <p data-jmpress="fade">
+            Description of feature
+            </p>
+            <!--
+            <p data-jmpress="fade">
+            Short code snippets
+            </p>
+            -->
+            <p data-jmpress="fade">
+            Examples
+            </p>
+            <div id="semantics4" data-jmpress="fade">
+            <p>Sometimes a "relevant" picture</p>
+            <img height=220 src="imgs/cat-annoyed.jpg">
+            </div>
+	</div>
+
+
+        <!-- *************************************************************** -->
+
 
         <!-- Level0 -->
         <div id="level0" class="step" data-x="-1500" data-y="0">
             <h1>Level0</h1>
-            <p id="level0a" data-jmpress="fade">
-                Everyone (except IE 6-8)
+            <p data-jmpress="fade">
+                That's so three years ago.
             </p>
-            <p id="level0b" data-jmpress="fade">
+            <p data-jmpress="fade">
+                Everyone (except IE 6-8)<br>
+            </p>
+            <p data-jmpress="fade">
                 IE 6-8 users with polyfills/fallbacks
             </p>
+            <!--
+            <p data-jmpress="fade">
+                Or in the immortal words of the French knights ...
+            </p>
+            <div data-jmpress="fade">
+                <p>"We already got one"</p>
+                <img height="200" src="imgs/french-surprise.jpg">
+            </div>
+            -->
         </div>
 
         <!-- New Semantic Elements -->
@@ -48,10 +630,10 @@
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
-                    <li>9.0<li>3.0<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
+                    <li>9<li>3.0<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
                 </ul>
                 <div class="html5-level">level0</div>
-                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/">W3C HTML5 Spec</a></div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/">W3C HTML5</a></div>
             </div>
 
             <h1>New Semantic Elements</h1>
@@ -86,7 +668,7 @@
                     <li>5.5<li>3.5<li>4.0<li>3.2<li>10.0<li>3.2<li>2.2
                 </ul>
                 <div class="html5-level">level0</div>
-                <div class="html5-spec"><a href="http://www.w3.org/TR/css3-fonts/">CSS3 Fonts Module</a></div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/css3-fonts/">W3C CSS3 Fonts Module</a></div>
             </div>
 
             <h1>@font-face</h1>
@@ -121,31 +703,34 @@
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
-                    <li>7.0<li>2.0<li>4.0<li>3.1<li>9.0<li>5.0<li>2.2
+                    <li>7<li>2.0<li>4.0<li>3.1<li>9.0<li><div class="warn">5.0</div><li>2.2
                 </ul>
                 <div class="html5-level">level0</div>
-                <div class="html5-spec"><a href="http://www.w3.org/TR/CSS21/visuren.html">CSS2.1 Visual Formatting Model</a></div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/CSS21/visuren.html">W3C CSS2.1 Visual Formatting Model</a></div>
             </div>
 
             <h1>CSS position:fixed</h1>
-            <p id="fixed1" data-jmpress="fade">
+            <p data-jmpress="fade">
             Elements that don't scroll.
             </p>
-            <p id="fixed2" data-jmpress="fade">
+            <p data-jmpress="fade">
             Like absolute position but relative to the viewport
             instead of the document.
+            </p>
+            <p data-jmpress="fade">
+            Unfortunately, iOS lagged on this one. Not available until 5.0.<br>
             </p>
             <div data-jmpress="warp-up">
             Examples:
             <ul id="fixed3">
                 <li><a href="http://nizoapp.com/" target="nizo">Nizo</a>
                     <ul>
-                        <li> fixed and dynamic absolute position
+                        <li>Fixed and dynamic absolute position
                     </ul>
                 <li><a href="http://yesisaidyes.com/" target="yesyes">Yes I Said Yes</a>
                     <ul>
                         <li>Static and dynamic fixed position
-                        <li>positioned background image used for animation
+                        <li>Positioned background image used for animation
                     </ul>
                 <li><a href="http://davidappleyard.net/" target="appleyard">davidappleyard.net</a>
                     <ul>
@@ -161,19 +746,27 @@
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
-                    <li>8.0<li>2.0<li>4.0<li>4.0<li>10.5<li>3.2<li>2.1
+                    <li>8<li>2.0<li>4.0<li>4.0<li>10.5<li>3.2<li>2.1
                 </ul>
                 <div class="html5-level">level0</div>
-                <div class="html5-spec"><a href="http://dev.w3.org/html5/webstorage/">W3C Web Storage</a></div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/webstorage/">W3C HTML5 - Web Storage</a></div>
             </div>
 
             <h1>Web Storage</h1>
-            <p id="webstorage1" data-jmpress="fade">
+            <p data-jmpress="fade">
             Like browser cookies, but more transactional and 5Mb vs 4Kb per domain.
             </p>
-            <div id="webstorage2" data-jmpress="fade">
+            <div data-jmpress="fade">
             <p><code>sessionStorage</code> - per session storage</p>
             <p><code>localStorage</code> - persistent across sessions</p>
+            <p data-jmpress="fade">
+            However, doesn't honor Javascript principle of making
+            all I/O operations asynchronous.
+            </p>
+            <p data-jmpress="fade">
+            For performance sensitive storage of large amounts of
+            data, consider indexedDB if it's available.
+            </p>
             </div>
 	</div>
 
@@ -191,21 +784,26 @@
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
-                    <li>9.0<li>2.0<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
+                    <li>9<li>2.0<li>4.0<li>3.1<li>9.0<li>3.2<li>2.1
                 </ul>
                 <div class="html5-level">level0</div>
-                <div class="html5-spec"><a href="http://dev.w3.org/html5/2dcontext/">W3C Canvas 2D Context</a></div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/2dcontext/">W3C HTML5 - Canvas 2D Context</a></div>
             </div>
 
             <h1>Canvas 2D Context</h1>
-            <p id="canvas1" data-jmpress="fade">
+            <p data-jmpress="fade">
             If any element can be considered the inspiration for HTML5, it's 2D Canvas.
             </p>
-            <p id="canvas2" data-jmpress="fade">
-            First-class &lt;img&gt; tag. 
+            <p data-jmpress="fade">
+            Raster graphics for the web. First-class &lt;img&gt; tag. 
             </p>
-            <div id="canvas3" data-jmpress="fade">
-            <a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_canvas.htm">Hands On (Microsoft)</a>
+            <p data-jmpress="fade">
+            The first part of the Flash killer trifecta: Canvas+SVG+&lt;video&gt;
+            </p>
+            <div data-jmpress="fade">
+            <ul>
+                <li><a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_canvas.htm">Hands On (Microsoft)</a>
+            </ul>
             </div>
 	</div>
 
@@ -213,9 +811,11 @@
             <h1>2D Canvas Examples</h1>
             <input type="button" value="IrishSpring" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Performance/IrishSpring/')">
             <input type="button" value="Crazy Tunnel" onclick="load('#canvasex', 'http://www.catuhe.com/msdn/canvas/tunnel.htm')">
-            <input type="button" value="TouchEffects" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Graphics/TouchEffects/')">
+            <input type="button" value="Particle Effects" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Graphics/TouchEffects/')">
             <input type="button" value="Particle Acceleration" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Performance/ParticleAcceleration/')">
+            <!--
             <input type="button" value="U.S. Wind Map" onclick="load('#canvasex', 'http://hint.fm/wind/index.html')">
+            -->
             <input type="button" value="Coil Game" onclick="load('#canvasex', 'http://hakim.se/experiments/html5/coil/')">
             <input type="button" value="Unload" onclick="unload('#canvasex')">
             <iframe id="canvasex" width="100%" height="80%">
@@ -228,10 +828,10 @@
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
-                    <li>9.0<li>3.5<li>4.0<li>3.1/4.0<li>9.5<li>3.2<li>2.1
+                    <li>9<li>3.5<li>4.0<li>3.1/4.0<li>9.5<li>3.2<li>2.1
                 </ul>
                 <div class="html5-level">level0</div>
-                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-mediaqueries/">CSS3 Media Queries</a></div>
+                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-mediaqueries/">W3C CSS3 Media Queries</a></div>
             </div>
 
             <h1>CSS3 @media-queries</h1>
@@ -260,6 +860,9 @@
 	</div>
 
 
+        <!-- *************************************************************** -->
+
+
         <!-- Level1 -->
         <div id="level1" class="step" data-x="-1500" data-y="2000">
             <h1>Level1</h1>
@@ -270,6 +873,971 @@
                 Often IE 6-8 users (with polyfills/fallbacks)
             </p>
         </div>
+
+        <!-- CSS3 borders -->
+        <div id="borders" class="step large-step" data-x="0" data-y="2000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.0<li>4.0<li>3.1<li>10.5<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level1</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-background/">W3C CSS3 Backgrounds and Borders</a></div>
+            </div>
+
+            <h1>CSS3 borders</h1>
+            <p id="borders1" data-jmpress="fade">
+            Seemingly small feature, but big impact on design.
+            </p>
+            <div data-jmpress="warp-up">
+            <h2>Example:</h2>
+            <input type="button" value="Border Hands On" onclick="load('#borderex', 'http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_border-radius.htm')">
+            <input type="button" value="Unload" onclick="unload('#borderex')">
+            <iframe id="borderex" width="100%" height="70%">
+            </iframe>
+            </div>
+	</div>
+
+        <!-- CSS3 transforms -->
+        <div id="transforms" class="step" data-x="1500" data-y="2000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.5<li>4.0<li>3.1<li>10.5<li>3.2<li><div class="warn">3.0</div>
+                </ul>
+                <div class="html5-level">level1</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/css3-2d-transforms/">W3C CSS3 2D Transforms</a></div>
+            </div>
+
+            <h1>CSS3 2D Transforms</h1>
+            <p data-jmpress="fade">
+                Apply scale, rotation, translation, skew to any DOM element.
+            </p>
+            <p data-jmpress="fade">
+                Used together can be used simulate 3D effects.
+            </p>
+	</div>
+
+        <div id="transforms-example" class="step example-large" data-x="1500" data-y="3000">
+            <h1>CSS3 2D Tranforms Examples</h1>
+            <input type="button" value="Hands On" onclick="load('#transex', 'http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_2d-transforms.htm')">
+            <input type="button" value="cssSandpaper" onclick="load('#transex', 'http://www.useragentman.com/tests/cssSandpaper/cube3.html')">
+            <input type="button" value="Unload" onclick="unload('#transex')">
+            <iframe id="transex" width="100%" height="80%">
+            </iframe>
+        </div>
+
+        <!-- SVG -->
+        <div id="svg" class="step" data-x="3000" data-y="2000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>2/3<li>4.0<li>3.1/3.2<li>9.0<li>3.2<li><div class="warn">3.0</a>
+                </ul>
+                <div class="html5-level">level1</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/SVG/">W3C SVG 1.1</a></div>
+            </div>
+
+            <h1>SVG</h1>
+            <p data-jmpress="fade">
+                Vector graphics for the web.
+            </p>
+            <p data-jmpress="fade">
+                The second part of the Flash killer trifecta: Canvas+SVG+&lt;video&gt;
+            </p>
+	</div>
+
+        <div id="svg-example" class="step example-large" data-x="3000" data-y="3000">
+            <h1>SVG</h1>
+            <input type="button" value="Impact Chart" onclick="load('#svgex', 'http://raphaeljs.com/github/impact.html')">
+            <input type="button" value="World Map" onclick="load('#svgex', 'http://raphaeljs.com/world/')">
+            <input type="button" value="Unload" onclick="unload('#svgex')">
+            <iframe id="svgex" width="100%" height="80%">
+            </iframe>
+        </div>
+
+        <!-- video tag -->
+        <div id="video-tag" class="step" data-x="4500" data-y="2000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.5<li>4.0<li>4.0<li>10.5<li>3.2<li>2.3
+                </ul>
+                <div class="html5-level">level1</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/the-video-element.html#the-video-element">W3C HTML5</a></div>
+            </div>
+
+            <h1>&lt;video&gt;</h1>
+            <p data-jmpress="fade">
+                First class video on the web.
+            </p>
+            <p data-jmpress="fade">
+                The final part of the Flash killer trifecta: Canvas+SVG+&lt;video&gt;
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://studio.html5rocks.com/#Cube" target="chrome-ball">HTML5Rocks - Chrome Ball</a>
+                    <ul>
+                        <li>Video is first class: styled with CSS transforms.
+                        <li>Video is first class: programmatic access to video data.
+                    </ul>
+                <li><a href="http://craftymind.com/factory/html5video/CanvasVideo.html" target="appleyard">Exploding Video</a>
+                    <ul>
+                        <li>Hidden &lt;video&gt; tag with video manipulated and rendered onto canvas
+                    </ul>
+                <li><a href="http://vimeo.com/39959962" target="vimeo">Vimeo</a>
+                    <ul>
+                        <li>custom control overlay
+                    </ul>
+                <li><a href="http://dev.opera.com/articles/view/custom-html5-video-player-with-css3-and-jquery/" target="custom-controls">Custom Controls Tutorial</a>
+            </ul>
+            </div>
+	</div>
+
+        <!-- audio tag -->
+        <div id="video-tag" class="step" data-x="6000" data-y="2000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.5<li>4.0<li>4.0<li>10.5<li>3.2<li>2.3
+                </ul>
+                <div class="html5-level">level1</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/the-video-element.html#the-video-element">W3C HTML5</a></div>
+            </div>
+
+            <h1>&lt;audio&gt;</h1>
+            <p data-jmpress="fade">
+                First class audio on the web.
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://www.apple.com/html5/showcase/audio/" target="apple-audio">Apple Audio Demo</a>
+                <li><a href="http://studio.html5rocks.com/samples/audio-podcast/index.html" target="audio-podcast">HTML5Rocks - Audio Podcast</a>
+                    <ul>
+                        <li>Custom controls
+                        <li>CSS borders
+                    </ul>
+                <li><a href="http://paulirish.com/demo/annotate" target="audio-annotate">Audio Annotation</a>
+                    <ul>
+                        <li>Song annotation
+                    </ul>
+                <!-- <li><a href="http://randallagordon.com/jaraoke/#" target="jaraoke">Jaraoke</a> -->
+            </ul>
+            </div>
+	</div>
+
+        <!-- geolocation -->
+        <div id="geolocation" class="step large-step" data-x="7500" data-y="2000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.5<li>4.0<li>5.0<li>10.6<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level1</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/geo/api/spec-source.html">Gelocation API</a></div>
+            </div>
+
+            <h1>Geolocation</h1>
+            <p data-jmpress="fade">
+                Where in the world is Carmen Sandiego's browser?
+            </p>
+
+            <div data-jmpress="warp-up">
+            <h2>Example:</h2>
+            <input type="button" value="HTML5Rocks Demo" onclick="load('#geolocex', 'http://studio.html5rocks.com/samples/geo/index.html')">
+            <input type="button" value="Unload" onclick="unload('#geolocex')">
+            <iframe id="geolocex" width="100%" height="70%">
+            </iframe>
+            </div>
+	</div>
+
+
+        <!-- *************************************************************** -->
+
+
+        <!-- Level2 -->
+        <div id="level2" class="step" data-x="-1500" data-y="4000">
+            <h1>Level2</h1>
+            <p data-jmpress="fade">
+                All latest desktop browsers, mixed mobile browsres.
+            </p>
+        </div>
+
+
+        <!-- WOFF -->
+        <div id="woff" class="step" data-x="0" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>3.6<li>5.0<li>5.1<li>11.1<li>5.0<li><div class="warn">X</a>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/webfonts/WOFF/spec/">W3C WOFF File Format 1.0</a></div>
+            </div>
+
+            <h1>WOFF</h1>
+            <p data-jmpress="fade">
+                Web Open Font Format
+            </p>
+            <p data-jmpress="fade">
+                Font packaging and compression format.
+            </p>
+            <p data-jmpress="fade">
+                Container for TrueType/OpenType/Open Font formats.
+            </p>
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_woff.htm" target="mswoff">MS WOFF Hands On</a>
+                <li><a href="http://www.google.com/webfonts" target="googlewoff">Google Web Fonts</a>
+                    <ul>
+                        <li>Large collection of free WOFF fonts.
+                    </ul>
+            </ul>
+            </div>
+	</div>
+
+        <!-- Inline SVG -->
+        <div id="inline-svg" class="step" data-x="1500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>9<li>4.0<li>7.0<li>5.1<li>11.6<li>5.0<li>3.0
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/SVG/proposals/svg-html/svg-html-proposal.html">SVG in HTML5</a></div>
+            </div>
+
+            <h1>Inline SVG</h1>
+            <p data-jmpress="fade">
+                First class vector graphics for the web.
+            </p>
+            <p data-jmpress="fade">
+                SVG is just DOM sub-tree within the bigger DOM tree.
+            </p>
+            <p data-jmpress="fade">
+                Can be programmatically accessed styled just like any other DOM element.
+            </p>
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://www.amplesdk.com/examples/markup/svg/grapes/" target="grapes">Grapes</a>
+                <li><a href="http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html" target="svg-edit">SVG Editor</a>
+            </ul>
+            </div>
+	</div>
+
+
+        <!-- offline apps / cache manifest -->
+        <div id="offline" class="step" data-x="3000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>3.0<li>4.0<li>4.0<li>10.6<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/offline.html#offline">W3C HTML5</a></div>
+            </div>
+
+            <h1>Offline Applications </h1>
+
+            <p data-jmpress="fade">
+            Also called Cache Manifest
+            </p>
+            <p data-jmpress="fade">
+            Somewhat <a href="http://lanyrd.com/2012/jsconf-us/sqxcz/">inflexible and hard to use.</a><br>
+            Storage or File APIs may be better if available.
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://html5demos.com/offline" target="offex1">Offline Demo</a>
+                <ul>
+                    <li> detect online offline condition
+                </ul>
+                <li><a href="http://everytimezone.com/" target="offex2">Every Time Zone</a>
+            </ul>
+            </div>
+            
+        </div>
+
+        <!-- Web Workers -->
+        <div id="workers" class="step" data-x="4500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>3.5<li>4.0<li>4.0<li>10.6<li>5.0<li><div class="warn">X</div>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/workers/">W3C HTML5 - Web Workers</a></div>
+            </div>
+
+            <h1>Web Workers</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://nerget.com/rayjs-mt/rayjs.html" target="workerex1">Ray Tracer</a>
+                <li><a href="http://java-script.limewebs.com/demos/swarm/buzz.html" target="workerex2">Letter Swarm</a>
+            </ul>
+            </div>
+        </div>
+
+        
+        <!-- CSS3 transitions -->
+        <div id="transitions" class="step" data-x="6000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>4.0<li>3.1<li>10.5<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-transitions/">W3C CSS3 Transitions</a></div>
+            </div>
+
+            <h1>CSS3 transitions</h1>
+            <p data-jmpress="fade">
+            Simple animation between two CSS settings
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://media.24ways.org/2009/14/2/index.html" target="transex1">Rafting Picture</a>
+                <li><a href="http://thinkvitamin.com/code/sexy-interactions-with-css-transitions/" target="transex2">Transitions Walkthrough</a>
+                <li><a href="http://matthewlein.com/ceaser/" target="transex3">Transition Easing</a>
+                <li><a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_transitions.htm" target="transex4">MS Transitions Hands On</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- CSS3 animations -->
+        <div id="animations" class="step" data-x="7500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>5.0<li>4.0<li>4.0<li><div class="warn">12.0</a><li>3.2<li>2.1/4.0
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-animations/">W3C CSS3 Animations</a></div>
+            </div>
+
+            <h1>CSS3 animations</h1>
+            <p data-jmpress="fade">
+            More sophisticated keyframe animation
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://robertnyman.com/css3/css-animations/css-animations-percentage.html" target="animex1">Scale Rotate Animation</a>
+                <li><a href="http://www.webkit.org/blog-files/leaves/index.html" target="animex2">Falling Leaves</a>
+                <li><a href="http://ie.microsoft.com/testdrive/Performance/BetaFishIE/" target="animex3">Swimming Fish</a>
+                <ul>
+                    <li> SVG used for the parts of the fish
+                </ul>
+                <li><a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_animations.htm" target="animex4">MS Animations Hands On</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- history -->
+        <!--
+        <div id="history" class="step" data-x="9000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>5.0<li>?<li>11.5<li>5.0<li>?
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href=""></a></div>
+            </div>
+            W3C HTML5
+
+            <h1>history</h1>
+            - enables proper infinite scroll:
+              http://warpspire.com/talks/responsive/
+
+            http://robertnyman.com/html5/history-api/
+            http://warpspire.com/experiments/history-api/
+                - infinite scroll
+            http://lab.simurai.com/stars/
+                - History API, back/forward without page reload
+                - Also SVG effects for HTML
+        </div>
+        -->
+
+        <!-- WebSockets -->
+        <div id="websockets" class="step" data-x="10500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>8.0<li>4/14<li>5/?<li><div class="warn">?</div><li>4.2/?<li><div class="warn">X</div>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/websockets/">W3C HTML5 - WebSockets</a></div>
+                <div class="html5-spec"><a href="http://tools.ietf.org/html/rfc6455">IETF WebSockets (RFC 6455)</a></div>
+                <div class="html5-spec"><a href="http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76">Hixie 76 (deprecated)</a></div>
+            </div>
+
+            <h1>WebSockets</h1>
+            <p data-jmpress="fade">
+            API and protocol
+            </p>
+            <p data-jmpress="fade">
+            Two different protocols: Hixie and HyBi/IETF
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://rumpetroll.com/" target="websocketex1">Rumpetroll</a>
+                <ul>
+                    <li> Canvas used for rendering swimmers.
+                </ul>
+                <li><a href="http://wordsquared.com/" target="websocketex2">Words squared</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- SVG Filters -->
+        <!--
+        <div id="svg-filters" class="step" data-x="12000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>3.0<li>5.0/8.0<li>6.0<li>9.0<li>X<li>X
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href=""></a></div>
+            </div>
+
+            <h1>SVG filters</h1>
+            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_svg-filter-effects.htm
+        </div>
+        -->
+
+
+        <!-- File / File Reader -->
+        <div id="file" class="step" data-x="13500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>3.6<li>6.0<li>5.1<li>11.1<li><div class="warn">X</div><li>3.0
+                </ul>
+                <ul class="browser-list">
+                    <li>10<li>3.6<li>6.0<li><div class="warn">X</div><li>11.1<li><div class="warn">X</div><li>3.0
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/2006/webapi/FileAPI/">W3C File API</a></div>
+            </div>
+
+            <h1>File &amp; File Reader APIs</h1>
+            <p data-jmpress="fade">
+            File input on forms could only upload via a server.
+            </p>
+            <p data-jmpress="fade">
+            FileReader allows the client side to read the file<br>
+            without first sending it to a server.
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://html5demos.com/file-api-simple" target="fileex2">File/FileReader Demo</a>
+                <li><a href="http://www.html5rocks.com/en/tutorials/file/dndfiles/" target="fileex1">File Walkthrough</a>
+                <ul>
+                    <li> Also demonstrates Blob Data
+                </ul>
+            </ul>
+            </div>
+            
+            
+        </div>
+
+        <!-- binary -->
+        <div id="binary" class="step large-step" data-x="15000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>5.0<li>5.1<li>11.1<li><div class="warn">X</div><li>3.0
+                </ul>
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>7.0<li>5.1<li>11.6<li>4.2<li><div class="warn">4.0</div>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/2006/webapi/FileAPI/">W3C File API</a></div>
+                <div class="html5-spec"><a href="http://www.khronos.org/registry/typedarray/specs/latest/">Khronos Typed Array</a></div>
+            </div>
+
+            <h1>Binary Data:</h1>
+            <h2>Blobs</h2>
+            <div data-jmpress="warp-right">
+            Examples:
+            <ul>
+                <li><a href="http://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-slicing-files" target="binaryex1">Blob slice file data</a>
+                <ul>
+                    <li> Blob slicing from FileReader
+                </ul>
+            </ul>
+            </div>
+            
+
+            <h2>Typed Arrays</h2>
+            <p data-jmpress="fade">
+            Native binary type data for Javascript
+            </p>
+            <div data-jmpress="fade">
+            <p>Previously, binary data had to be encoded somehow</p>
+            <ul>
+                <li>binary coded string
+                <li>normal arrays of values 0-255
+            </ul>
+            </div>
+            <div data-jmpress="fade">
+            <p>Building blocks of many level2, level3 features</p>
+            <ul>
+                <li>2D canvas imageData
+                <li>direct binary data over WebSockets
+                <li>File Reader/Writer/System APIs
+                <li>audio data
+                <li>WebGL
+                <li>Web Worker Transferable Objects (super fast communication between workers)
+            </ul>
+            </div>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://ie.microsoft.com/testdrive/HTML5/TypedArrays/" target="binaryex1">Binary File Inspector</a>
+                <ul>
+                    <li> Also FileReader
+                </ul>
+            </ul>
+            </div>
+        </div>
+
+        <!-- requestAnimationFrame -->
+        <div id="" class="step" data-x="18000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>10.0<li><div class="warn">X</div><li><div class="warn">X</div><li><div class="warn">X</div><li><div class="warn">X</div>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/animation-timing/">W3C Animation Timing</a></div>
+            </div>
+
+            <h1>requestAnimationFrame</h1>
+            <p data-jmpress="fade">
+            Alternative to setTimeout
+            </p>
+            <p data-jmpress="fade">
+            Indicates to browser that callback is for animation
+            </p>
+            <p data-jmpress="fade">
+            Aware of when window/tab is visible
+            </p>
+            <p data-jmpress="fade">
+            Saves CPU/battery life
+            </p>
+            <p data-jmpress="fade">
+            Called when browser is ready to display next frame
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://mrdoob.com/lab/javascript/requestanimationframe/" target="reqanimex1">Revolving Ball</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- indexedDB -->
+        <div id="" class="step" data-x="19500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>11.0<li><div class="warn">X</div><li><div class="warn">X</div><li><div class="warn">X</div><li><div class="warn">X</div>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/IndexedDB/">W3C Indexed DB</a></div>
+            </div>
+
+            <h1>indexedDB</h1>
+            <p data-jmpress="fade">
+            Sits somewhere between full-on SQL<br>
+            and unstructured key-value pairs in localStorage.
+            </p>
+            <p data-jmpress="fade">
+            Values are stored as structured JavaScript objects
+            </p>
+            <p data-jmpress="fade">
+            Indexing system facilitates filtering and lookup.
+            </p>
+            <p data-jmpress="fade">
+            Asynchronous, with moderately granular locking
+            </p>
+            <p data-jmpress="fade">
+            Joining normalized data is a completely manual process.
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://ie.microsoft.com/testdrive/HTML5/Cookbook/" target="idbex1">Cookbook Demo</a>
+            </ul>
+            </div>
+        </div>
+
+
+        <!-- CSS3 3D transforms -->
+        <div id="" class="step" data-x="21000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>10.0<li>12.0<li>4.0<li><div class="warn">X</div><li>3.2<li>3.0
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/csswg/css3-3d-transforms/">W3C CSS3 3D Transforms</a></div>
+            </div>
+
+            <h1>CSS3 3D transforms</h1>
+
+            <p data-jmpress="fade">
+            Guide: http://24ways.org/2010/intro-to-css-3d-transforms
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://desandro.github.com/3dtransforms/examples/perspective-03.html" target="3dtransex1">Perspective</a>
+                <li><a href="http://desandro.github.com/3dtransforms/examples/cube-02-show-sides.html" target="3dtransex2">Cube</a>
+                <li><a href="http://desandro.github.com/3dtransforms/examples/carousel-02-dynamic.html" target="3dtransex3">Carousel</a>
+                <li><a href="http://www.webkit.org/blog-files/3d-transforms/poster-circle.html" target="3dtransex4">Poster Circle</a>
+                <li><a href="http://www.webkit.org/blog-files/3d-transforms/morphing-cubes.html" target="3dtransex5">Morphing Cubes</a>
+                <li><a href="http://www.joelambert.co.uk/cube3d/" target="3dtransex6">Cube 3D</a>
+                <li><a href="http://www.is-real.net/experiments/css3/wonder-webkit/" target="3dtransex7">Wonder Wall</a>
+                <li><a href="http://demos.jackadam.net/webkit_molecule/" target="3dtransex8">Molecule</a>
+                <li><a href="http://lab.hakim.se/scroll-effects/" target="3dtransex9">Scroll Effects</a>
+            </ul>
+            </div>
+        </div>
+
+
+
+        <!-- CSS Flexbox -->
+        <!--
+        <div id="" class="step" data-x="22500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>2.0<li>4.0<li>3.1<li>X<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href=""></a></div>
+            </div>
+
+            <h1>CSS Flexbox</h1>
+            http://icondeposit.wdfiles.com/local--files/blog%3Apure-css3-flexbox-tutorial/CSS3%20Flexbox.html
+            http://www.gwilym.com/flexbox/example-1.html
+            http://www.gwilym.com/flexbox/example-2.html
+            http://www.gwilym.com/flexbox/example-4.html
+            http://www.gwilym.com/flexbox/example-5.html
+            http://www.gwilym.com/flexbox/example-6.html
+            http://www.gwilym.com/flexbox/example-7.html
+            http://www.gwilym.com/flexbox/example-8.html
+            http://www.gwilym.com/flexbox/example-9.html
+            http://www.gwilym.com/flexbox/example-10.html
+        </div>
+        -->
+
+        <!-- Form Features -->
+        <div id="" class="step" data-x="24000" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>~10<li>~4.0<li>~4.0<li>~4.0<li>9.0<li>~4.0<li><div class="warn">X</div>
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/html5/spec/">W3C HTML5</a></div>
+            </div>
+
+            <h1>Form Features</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://slides.html5rocks.com/#new-form-types" target="formex1">HTML5Rocks Form Types</a>
+                <li><a href="http://peter.sh/examples/?/html/meter-progress.html" target="formex1">Progress Example</a>
+                <li><a href="http://afarkas.github.com/webshim/demos/demos/webforms.html" target="formex1">Form Examples</a>
+                <li><a href="http://lab.simurai.com/umbrui/" target="formex1">Simurai Controls</a>
+                <ul>
+                    <li> HTML5 form elements with sophisticated CSS styling
+                </ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Touch events -->
+        <div id="touch" class="step" data-x="25500" data-y="4000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>10<li>4.0<li>X<li>X<li>X<li>3.2<li>2.1
+                </ul>
+                <div class="html5-level">level2</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/touch-events/">W3C Touch Events</a></div>
+            </div>
+
+            <h1>Touch Events</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://www.quirksmode.org/m/tests/drag2.html" target="touchex1">Touch Drag</a>
+                <li><a href="http://clear.youyuxi.com/" target="touchex2">HTML5 Clear</a>
+            </ul>
+            </div>
+            
+        </div>
+
+
+        <!-- *************************************************************** -->
+
+
+        <!-- Level3 -->
+        <div id="level3" class="step" data-x="-1500" data-y="6000">
+            <h1>Level3</h1>
+            <p data-jmpress="fade">
+                Pure awesome!
+            </p>
+            <p data-jmpress="fade">
+                ... but not for a while.
+            </p>
+        </div>
+
+
+        <!-- Device Orientation -->
+        <div id="orientation" class="step" data-x="0" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>3.6<li>7.0<li>X<li>X<li>4.2<li>3.0
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/geo/api/spec-source-orientation.html5">W3C Device Orientation</a></div>
+            </div>
+
+            <h1>Device Orientation</h1>
+            <p data-jmpress="fade">
+                Which way is up?
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://hakim.se/experiments/css/holobox/" target="orientex1">Holobox</a>
+                <ul>
+                    <li> Also CSS 3D Transforms
+                </ul>
+                <li><a href="http://mrdoob.com/projects/chromeexperiments/ball_pool/" target="orientex1">Mrdoob's Ball Pool</a>
+                <ul>
+                    <li> Canvas for each ball being repositioned using box2d.js physics engine
+                </ul>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Server-sent events -->
+        <!--
+        <div id="sse" class="step" data-x="1500" data-y="6000">
+        Server-sent events
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>6.0<li>6.0<li>5.0<li>9.0<li>4.0<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href=""></a></div>
+            </div>
+            W3C HTML5 adjunct
+
+            - Server push (without client polling)
+            - Sites between long-poll and WebSockets
+
+            http://googlecodesamples.com/html5/sse/sse.html
+        </div>
+        -->
+
+        <!-- Shared Web Workers -->
+        <!--
+        <div id="shared-workers" class="step" data-x="3000" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>X<li>4.0<li>5.0<li>10.6<li>5.0<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href=""></a></div>
+            </div>
+
+            <h1>Shared Web Workers</h1>
+            - Like Web Workers, but web worker instances can be shared
+              between tabs from the same domain
+
+            http://www.whatwg.org/demos/workers/shared/003/test.html
+        </div>
+        -->
+
+
+        <!-- WebGL (3D canvas) -->
+        <div id="webgl" class="step" data-x="4500" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>4.0<li>8.0<li>5.1<li>12<li>X<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://www.khronos.org/registry/webgl/specs/latest/">Khronos WebGL</a></div>
+            </div>
+
+            <h1>WebGL (3D canvas)</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://hakim.se/experiments/webgl/shaders/03/" target="webglex1">Shaders</a>
+                <li><a href="http://workshop.chromeexperiments.com/globe" target="webglex2">Population Globe</a>
+                <li><a href="http://mrdoob.com/131/Clouds" target="webglex3">Clouds</a>
+                <li><a href="http://mrdoob.com/97/Depth_of_Field" target="webglex4">Depth of Field</a>
+                <li><a href="http://media.tojicode.com/q3bsp/" target="webglex5">Quake 3 Level</a>
+                <li><a href="http://hakim.se/experiments/webgl/particles/01/" target="webglex6">Particles</a>
+                <li><a href="http://lights.elliegoulding.com/" target="webglex7">Terrain Music Flyover Visualization</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Web audio / audio data -->
+        <div id="webaudio" class="step" data-x="6000" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>X<li>10.0<li>X<li>X<li>X<li>X
+                </ul>
+                <ul class="browser-list">
+                    <li>X<li>4.0<li>X<li>X<li>X<li>X<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://www.w3.org/TR/webaudio/">W3C Web Audio API</a></div>
+                <div class="html5-spec"><a href="https://developer.mozilla.org/en/Introducing_the_Audio_API_Extension">Mozilla Audio Data API</a></div>
+            </div>
+            <h1>Advanced Audio:</h1>
+            Web Audio &amp; Audio Data APIs
+
+            <p data-jmpress="fade">
+            Audio Data API: requires processing in Javascript.
+            </p>
+            <p data-jmpress="fade">
+            Web Audio: node based audio synthesis.
+            </p>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#40" target="webaudioex1">Cross Fade</a>
+                <li><a href="http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#41" target="webaudioex2">Generating Sounds</a>
+                <li><a href="http://www.iquilezles.org/apps/soundtoy/index.html" target="webaudioex3">Sound Toy</a>
+                <li><a href="http://static.echonest.com/BohemianRhapsichord/index.html" target="webaudioex4">Bohemian Rhapsichord</a>
+                <ul>
+                    <li> Analyze and sort sounds
+                </ul>
+                <li><a href="http://www.htmlfivewow.com/demos/audio-visualizer/index.html" target="webaudioex5"></a>
+                <ul>
+                    <li> Waveform / Beat Analysis
+                </ul>
+            </ul>
+            </div>
+        </div>
+
+        <!-- full screen -->
+        <div id="fullscreen" class="step" data-x="7500" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>10.0<li>15.0<li>5.1<li>X<li>X<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html">WHATWG Fullscreen</a></div>
+            </div>
+
+            <h1>Full Screen API</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://html5-demos.appspot.com/static/fullscreen.html" target="fullex1">Toggle Element/iframe Fullscreen</a>
+                <li><a href="http://robnyman.github.com/fullscreen/" target="fullex2">Toggle Element Fullscreen</a>
+                <li><a href="http://marblesoccer.com/" target="fullex3">Mable Soccer</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- web notifications -->
+        <div id="notifications" class="step" data-x="9000" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>X<li>5.0<li>X<li>X<li>X<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/2006/webapi/WebNotifications/">W3C Web Notifications</a></div>
+            </div>
+
+            <h1>web notifications</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://www.html5rocks.com/en/tutorials/notifications/quick/" target="notifyex1">Notification Walkthrough</a>
+                <li><a href="http://dangercove.github.com/html5-notifications/" target="notifyex1">HTML Notifications</a>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Filesystem & FileWriter API -->
+        <div id="filesystem" class="step" data-x="10500" data-y="6000">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>X<li>X<li>8.0<li>X<li>X<li>X<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/2009/dap/file-system/file-dir-sys.html"></a>W3C File API: Directories and System</div>
+            </div>
+
+            <h1>File API: Directories &amp; System</h1>
+
+            <div data-jmpress="warp-up">
+            Examples:
+            <ul>
+                <li><a href="http://www.htmlfivewow.com/demos/terminal/terminal.html" target="filesystemex1">HTML5 Terminal</a>
+                <ul>
+                    <li> Also has WebGL 3D mode
+                </ul>
+            </ul>
+            </div>
+            
+        </div>
+
+
+        <!-- TODO: web as a platform, Javascript as the web assembly
+        language (or perhaps C of the web) -->
 
 </div>
 

@@ -13,6 +13,17 @@
     float: right;
 }
 
+.html5-timeline {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    float: right;
+    font-weight: bold;
+    color: blue;
+    font-size: 3em;
+}
+
+
 .browser-list {
     position: relative;
     margin: 0px;
@@ -38,4 +49,14 @@
 .html5-spec {
     width: 100%;
     margin-top: 5px;
+}
+
+.warn {
+    font-weight: bold;
+    color: red;
+}
+
+.partial {
+    font-weight: bold;
+    color: grey;
 }

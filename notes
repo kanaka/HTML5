@@ -20,6 +20,8 @@ Browser share graphs:
     - http://xkcd.com/934/
     - www.lastcalc.com
     - http://www.businessinsider.com/the-future-of-mobile-deck-2012-3#-1
+    - WebSocket latency over EDGE is probably only 200ms:
+        http://blog.joshsoftware.com/2012/04/12/real-time-games-using-html5-websockets-nodejs-and-socket-io/
 
 - Connect to browser on phone/ipad in real-time
 
@@ -68,6 +70,10 @@ http://labs.dinahmoe.com/plink/#
       http://speakerdeck.com/u/addyosmani/p/building-decoupled-large-scale-applications-using-javascript-and-jquery
     - Javascript Design Patterns:
       http://addyosmani.com/resources/essentialjsdesignpatterns/book/
+    - Page flipping (like a book):
+        http://rbarraza.com/html5-canvas-pageflip/
+    - Automatic retina graphics:
+        http://retinajs.com/
 
 - Stages of the web
     http://www.mikealrogers.com/posts/a-new-direction-for-web-applications-.html
@@ -378,4 +384,14 @@ Image collection:
     http://www.buzzymultimedia.com/caffeine-loadingplease-wait.html
 
     Troll face: http://ohinternet.com/Trollface
+
     Peanuts...Monkeys: http://techcrunch.com/2012/04/15/stop-looking-for-a-technical-co-founder/
+
+    50 cent and Bert (surprises):
+       http://www.threadbombing.com/details.php?image_id=4958
+
+    Owl attached by bird:
+        http://headlikeanorange.tumblr.com/post/20859862015
+
+    Read the Source Luke:
+        http://www.codinghorror.com/blog/2012/04/learn-to-read-the-source-luke.html

@@ -1,3 +1,5 @@
+s/ *\([0-9][0-9X\/\.]*\)*/<li>\1/g
+
 1a. Introduction
 1b. What is HTML5?
 2. HTML5/Web Application Technologies and APIs
@@ -9,6 +11,47 @@
 1a. Introduction
     - About me: globe fly around
     - About me: technical background
+
+        - Principal Software Engineer at LonoCloud.com
+        - Live in Duncanville
+        - Wife works in clinical research in an infectious disease
+          practice in Dallas and is also an part-time lecturer at
+          Baylor in their graduate and undergraduate Nursing program.
+        - We just adopted a beautiful little girl.
+            - Picture of Mari
+
+        - 1996-1997: Built an Intranet site at Texas Instruments for
+          content management
+        - 1997: First contract to build a corporate website
+        - 1998: Started and ran a small business that hooked up
+          students to the Internet
+        - 1999: Built an advanced ticketing, work tracking and task management system
+        - 2000: Senior thesis: scheduling and tracking web site for
+          imaginary truck company.
+        - 2000: Presented a paper at LISA USENIX conference on open
+          source project for automated management of large computer
+          science network.
+        - Compaq Tru64 UNIX - hardware drivers
+        - HP: cluster and file-system group
+        - Gentoo Developer (Developer oriented Linux distribution)
+        - RedHat: added Solaris support to the RHN system
+        - SiCortex: some of everything: bootloaders, build system,
+          cross-compilers, hardware drivers, low-level libraries,
+          automated test suite, release engineering, etc
+        - SIL International (non-profit linguistic organization):
+          network engineering, process automation, virtualized remote
+          access infrastructure and software.
+        - Sentry Data Systems: built IaaS (Infrastructure as
+          a Service) platform comparable to Amazon EC2 in
+          functionality but targeting needs of the healthcare
+          industry. 
+        - Built noVNC open source web application for plugin-free
+          access to console of virtual servers.
+        - Participated in the IETF HyBi working group developing the
+          first version of the WebSocket protocol.
+        - Some miscellaneous contributions to the HTML5 specification.
+        - LonoCloud - developing a next generation PaaS (Platform as
+          a Server) using the Clojure language for the core platform.
 
 1b. What is HTML5?
     - Some crazy demos:
@@ -172,7 +215,7 @@
     - HTML5: level0, level1, level2, level3
 
         - level0 (ready)
-            - >  75% native
+            - > 75% native
             - ~ 100% with polyfills/shims
             - foundational for HTML5, but in existance for years
             - 0-99 HTML5Test score
@@ -304,7 +347,6 @@
             9.0     2.0/3.0 4.0     3.1     10.5    3.2     2.1
 
             http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_border-radius.htm
-            http://css3pie.com/
 
             IE6-8 Polyfills:
                 CSS3 PIE: http://css3pie.com/
@@ -400,6 +442,7 @@
             9.0     4.0     7.0     5.1     11.6    5.0     3.0
 
             http://www.amplesdk.com/examples/markup/svg/grapes/
+            http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html
 
 
         offline apps / cache manifest
@@ -728,10 +771,20 @@
         3D sketch using 2D canvas:
             http://hakim.se/experiments/html5/sketch/
 
+        The Pixelator:
+            http://thepixelator.com/
+                - jQuery UI to build UI
+
         CSS Analglyph 3D effect:
             http://lab.simurai.com/css3d/
                 - one line of CSS (text-shadow)
                 - contenteditable (show edit and spell check)
+
+        ImageStack:
+            http://janne.aukia.com/zoomooz/examples/imagestack/index.html
+                - CSS transforms
+                - CSS transitions
+                - works on iPad (a bit slow)
 
         GateOne (maybe not on Mac)
             - WebSockets
@@ -747,20 +800,28 @@
         3D Tin (WebGL + styled UI):
             http://www.3dtin.com/
 
-        PDF.js:
-            http://mozilla.github.com/pdf.js/web/viewer.html
-            - multiple canvases
-            - binary data?
-
         http://airtightinteractive.com/demos/js/reactive/
             - Web Audio to analyze audio
             - WebGL visualization
-
+        
         noVNC
+            - CSS3 borders
             - WebSockets
-            - Canvas
-            - media queries
+            - 2D Canvas
+            - CSS3 media queries
             - Touch events
+
+        PDF.js:
+            http://mozilla.github.com/pdf.js/web/viewer.html
+            - FileReader
+            - Typed Arrays
+            - Web Workers
+            - SVG icons for the buttons
+            - 2D Canvas (one for each image element)
+            - CSS borders
+            - CSS position:fixed
+            - CSS3 transitions (for side bar)
+            - CSS3 transforms to "style" text
 
 3. Native vs Web Applications 
     - Show what's possible

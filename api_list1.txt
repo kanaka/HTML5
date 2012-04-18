@@ -43,7 +43,7 @@ level3  CSS Filter Effects      [00/?]
 level3  WebGL (3D canvas)       [00/48]         X       4.0     8.0     5.1     12      X       X
 level3  audio data              [00/45]         X       4.0     10.0    X       X       X       X
 level3  full screen             [0/39]          X       10.0    15.0    5.1     X       X       X
-level3  web notifications       [0/27]          X       5.0     X       X       X       X       X
+level3  web notifications       [0/27]          X       X       5       X       X       X       X
 
 * - in W3C main HTML5 spec
 . - in W3C adjunct HTML5 spec
