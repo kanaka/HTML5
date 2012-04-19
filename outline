@@ -174,10 +174,10 @@ s/ *\([0-9][0-9X\/\.]*\)*/<li>\1/g
             technologies already here or on the near horizon.
 
         - Or how about: "HTML5 & related technologies"
-            http://platform.html5.org/
             http://en.wikipedia.org/wiki/File:HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png
 
         - What people really mean HTML5: The Web Platform in modern browsers.
+            http://platform.html5.org/
             - HTML5 is like Web 2.0: it's a name for a rapid paradigm
             shift, rather than for the target.
             - There is something new that is clearly happening, so we'll
@@ -775,7 +775,7 @@ s/ *\([0-9][0-9X\/\.]*\)*/<li>\1/g
             http://thepixelator.com/
                 - jQuery UI to build UI
 
-        CSS Analglyph 3D effect:
+        CSS Anaglyph 3D effect:
             http://lab.simurai.com/css3d/
                 - one line of CSS (text-shadow)
                 - contenteditable (show edit and spell check)
@@ -785,9 +785,6 @@ s/ *\([0-9][0-9X\/\.]*\)*/<li>\1/g
                 - CSS transforms
                 - CSS transitions
                 - works on iPad (a bit slow)
-
-        GateOne (maybe not on Mac)
-            - WebSockets
 
         jPlayer
             - video, audio tags

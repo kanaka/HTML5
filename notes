@@ -1,9 +1,25 @@
 :'<,'>s/ *\([0-9X][0-9\.]*\)/<td>\1<\/td>/g
 
 
-Icons:
-    http://raphaeljs.com/icons/#!
+Steal example code from:
+    http://slides.html5rocks.com/#landing-slide
+HTML5 mobile app builder:
+    http://tiggzi.com/home
 
+- Goal of Mozilla is to close Javascript performance gap with Java
+    http://blog.mozilla.com/futurereleases/2011/11/10/type-inference-to-firefox-beta/
+
+- Run Android apps on Windows: http://bluestacks.com/
+
+            <p id="queries3" data-jmpress="fade">
+            Common pattern is to target 3 sizes, but let design and
+            content lead.
+            </p>
+
+
+fonts:
+    - Pepper icon:
+      http://vhardy.github.com/presentations/html5-community-meet-up-2012/#/6/10
 
 Browser share graphs:
     http://arstechnica.com/business/news/2012/03/browsing-behavior-in-february-internet-explorer-chrome-down-firefox-up.ars
@@ -364,6 +380,7 @@ Image collection:
 
     - Awesomeness:
       http://pleasedress.me/img/4454.gif
+      http://www.meh.ro/original/2010_04/meh.ro3824.png
     
     http://blip.tv/clojure/michael-fogus-the-macronomicon-5970233
     - Two ended gun:
@@ -395,3 +412,11 @@ Image collection:
 
     Read the Source Luke:
         http://www.codinghorror.com/blog/2012/04/learn-to-read-the-source-luke.html
+
+    Battle of the Browsers Images:
+        http://www.hongkiat.com/blog/20-awesome-battle-of-the-browsers-artworks/
+
+    Icons:
+        http://raphaeljs.com/icons/#!
+
+
