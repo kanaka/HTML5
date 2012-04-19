@@ -1,6 +1,6 @@
 [submodule "jmpress.js"]
 	path = jmpress.js
-	url = https://github.com/shama/jmpress.js.git
+	url = git://github.com/shama/jmpress.js.git
 [submodule "flotr2"]
 	path = flotr2
-	url = https://github.com/kanaka/Flotr2.git
+	url = git://github.com/kanaka/Flotr2.git
