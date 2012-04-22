@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #container {
+        width : 95%;
+        height: 95%;
+        margin: 8px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <!--[if IE]>
+    <script type="text/javascript" src="/static/lib/FlashCanvas/bin/flashcanvas.js"></script>
+    <![endif]-->
+    <!--<script type="text/javascript" src="flotr2/flotr2.min.js"></script>-->
+    <script type="text/javascript" src="../flotr2/flotr2.js"></script>
+    <script type="text/javascript">
+
+var horizontal = (horizontal ? true : false), // Show horizontal bars
+    ie = [[ 25,  1.35, "6"],     // IE 6
+          [ 26,  3.04, "7"],     // IE 7
+          [ 41, 17.25, "8"],     // IE 8
+          [141, 11.05, "9"],     // IE 9
+          [314,  0.01, "10"] ],  // IE 10 ?
+
+    ff = [[ 74,  0.38, "3.0"],    // FF 3.0
+          [170,  0.42, "3.5"],    // FF 3.5
+          [183,  3.19, "3.6"],    // FF 3.6
+          [281,  0.59, "4.0"],    // FF 4.0
+          [296,  0.47, "5.0"],    // FF 5.0
+          [327,  0.50       ],    // FF 6.0
+          [327,  0.51, "7.0"],    // FF 7.0
+          [330,  1.32       ],    // FF 8.0
+          [330,  5.07, "9.0"],    // FF 9.0
+          [332,  9.85, "10.0"],   // FF 10.0
+          [335,  0.29, "11.0"] ], // FF 11.0
+
+    chrome =
+         [[352,  0.16, "10.0"],  // Chrome 10.X
+          [359,  0.19        ],  // Chrome 11.X
+          [359,  0.25        ],  // Chrome 12.X
+          [359,  0.23, "13.0"],  // Chrome 13.X
+          [347,  0.32, "14.0"],  // Chrome 14.X
+          [369,  0.32, "15.0"],  // Chrome 15.X
+          [373, 12.25, "16.0"],  // Chrome 16.X
+          [373, 12.56, "17.0"]], // Chrome 17.X
+
+    safari =
+         [[258,  1.17, "5.0"],   // Safari 5.0
+          [303,  3.05, "5.1"]],  // Safari 5.1
+
+    opera =
+         [[287,  0.15, "11.5"],   // Opera 11.5
+          [329,  1.38, "11.6"]],  // Opera 11.6
+
+    iOS =
+          [[215,  0.56, "4.X"],   // iOS 4.2
+           [305,  1.49, "5.0"]],  // iOS 5.0
+
+    android =
+         [[151,  0.15, "2.1"],    // Android 2.1
+          [182,  0.55, "2.2"],    // Android 2.2
+          [184,  1.15, "2.3"],    // Android 2.3
+          [222,  0.07, "3.0"],    // Android 3.0
+          [254,  0.02, "4.0"]];   // Android 4.0
+
+(function lines(container, horizontal) {
+
+    var yticks = [
+                  [   1, "1"],
+                  [   2, "2"],
+                  [   3, "3"],
+                  [   4, "4"],
+                  [   5, "5"],
+                  [  10, "10"],
+                  [  15, "15"],
+                  [  20, "20"]]; // Ticks for the Y-Axis
+    var xticks = [
+                  [   0, "Level0"],
+                  [   50, "50"],
+                  [ 100, "Level1"],
+                  [ 150, "150"],
+                  [ 200, "200"],
+                  [ 250, "250"],
+                  [ 275, "Level2"],
+                  [ 300, "300"],
+                  [ 350, "Level3"],
+                  [ 400, "400"]], // Ticks for the Y-Axis
+        graph;
+
+  function ticksFn (n) { return parseInt(n,10).toString(); }
+
+  graph = Flotr.draw(container, [ 
+      { data : chrome,  label : 'Chrome',  lines : { show: false},  points : { show : true } }, 
+      { data : ff,      label : 'Firefox', lines : { show: false},  points : { show : true } }, 
+      { data : opera,   label : 'Opera',   lines : { show: false }, points : { show : true } },
+      { data : ie,      label : 'IE',      lines : { show: false},  points : { show : true } }, 
+      { data : safari,  label : 'Safari',  lines : { show: false},  points : { show : true } },
+      { data : iOS,     label : 'iOS',     lines : { show: false }, points : { show : true } },
+      { data : android, label : 'Android', lines : { show: false }, points : { show : true } }
+    ], {
+      colors: ['#4DA74D', '#DB4B4B', '#4BEBBB', '#2B4B9D', '#A460FD', "#C4808D", "#FCAA1C"],
+
+      xaxis : {
+        title: "HTML5Test Score",
+        //noTicks : 12,             // Display 12 ticks.
+        ticks: xticks,
+        //tickFormatter : ticksFn,  // Displays tick values between brackets.
+        min : 0,
+        max : 400
+      },
+      yaxis : {
+        title: "%",
+        //scaling: 'logarithmic',
+        ticks : yticks,            // Set Y-Axis ticks
+        min : 0,
+        max : 18                // Maximum value along Y-Axis
+      },
+      grid : {
+        verticalLines : true,
+        backgroundColor : {
+          colors : [[0,'#fff'], [1,'#ccc']],
+          start : 'top',
+          end : 'bottom'
+        }
+      },
+      legend : {
+        position : 'ne'
+      },
+      //title : 'Browser Capability VS Market Share'
+      //subtitle: '(HTML5Test Score)'
+  });
+
+})(document.getElementById("container"), false);
+
+    </script>
+  </body>
+</html>
