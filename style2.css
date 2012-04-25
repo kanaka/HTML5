@@ -2,7 +2,7 @@
 body {
     font-family: Verdana, sans-serif;
     min-height: 740px;
-    background-color: #FFF;
+    background-color: #ffe;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -12,7 +12,7 @@ body {
     height: 600px;
 
     display: block;
-    padding: 40px 60px;
+    padding: 20px 40px;
     border-radius: 10px;
 
     color: black;

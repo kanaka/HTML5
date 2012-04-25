@@ -15,81 +15,50 @@
 	<link href="jmpress.js/dist/basic-animations.css" rel="stylesheet" type="text/css" />
 
 	<script type="text/javascript" src="jmpress.js/libs/jquery/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="jmpress.js/dist/jmpress.js"></script>
+        <script>
+            if (window.location.search.search("simple") < 0) {
+                document.write('<script src="jmpress.js/dist/jmpress.js" type="text/javascript"><\/script>');
+            }
+        </script>
 </head>
 <body>
 
 <div id="simple">
 
-        <!--
-	<div id="everything" class="step" data-x="12000" data-y="0" data-z="0" data-scale="35">
-            <h1>HTML5</h1>
+	<div id="home" class="step" data-x="0" data-y="0" data-scale="60">
+            <div style="width:100%; height: 100%;
+                        text-align: center; margin-top: 200px;">
+            <img height="150" src="imgs/HTML5_Logo_512.png">
+            </div>
 	</div>
-        -->
-
-        <!-- Jump List -->
-        <div id="jump-list" class="step" data-x="-3000" data-y="-7000">
-            <h1>Content Index</h1>
-            
-            <ul>
-                <li> <a href="#about-me">About Me</a>
-                <li> <a href="#edge">Edge of HTML5</a>
-                <li> <a href="#overview">Overview</a>
-                <br><br>
-                <li> Background
-                <ul>
-                    <li> <a href="#history1">HTML5 History</a>
-                    <li> <a href="#so-what-is-html5a">HTML5 Defined</a>
-                </ul>
-                <br><br>
-                <li> HTML5 Features
-                <ul>
-                    <li> <a href="#levels">HTML5 Levels</a>
-                    <li> <a href="#level0">Level0</a>
-                    <li> <a href="#level1">Level1</a>
-                    <li> <a href="#level2">Level2</a>
-                    <li> <a href="#level3">Level3</a>
-                    <li> <a href="#pulling-it-together1">Pulling it all Together</a>
-                </ul>
-                <br><br>
-                <li> The Path From Here to There
-                <ul>
-                    <li> <a href="#native-vs-web1">"Native" Apps vs Web Apps</a>
-                    <li> <a href="#resources">A collection of HTML5 Resources</a>
-                </ul>
-            </ul>
-        </div>
-
 
         <!-- *************************************************************** -->
 
-
-        <!-- Start: Mac, PC -> Web -->
-        <div id="start" class="step" data-x="-3000" data-y="-6000">
+        <!-- Intro Section -->
+        <div id="intro"
+            class="step" data-x="-15000" data-y="-10000" data-scale="20">
+            <h1>Introduction</h1>
             <div style="width:100%; height: 100%;
                         text-align: center; margin-top: 60px;">
             <div class="html5-timeline">
                 <img height="200" src="imgs/HTML5_Logo_512.png">
             </div>
             <img src="imgs/mac_pc.png">
-            <p>source: sect.com</p>
+            <p>source: xkcd.com</p>
             </div>
-        </div>
+	</div>
 
         <!-- About Me -->
-        <div id="about-me" class="step tall-step" data-x="-1500" data-y="-6000">
+        <div id="about-me"
+            class="step tall-step" data-x="-21000" data-y="-10000" data-scale="4">
             <h1>About Me</h1>
+            <p>Joel Martin</p>
+            <p>html5@martintribe.org</p>
             <p data-jmpress="fade">
-            Principal Software Engineer at <a target="lonocloud" href="http://lonocloud.com">LonoCloud.com</a>
+            I am a Principal Software Engineer at <a target="lonocloud" href="http://lonocloud.com">LonoCloud.com</a>
             </p>
-            <ul data-jmpress="fade">
-                <li><a target="twitter1" href="https://twitter.com/#!/bus_kanaka">@bus_kanaka</a>
-                <li><a target="twitter2" href="https://twitter.com/#!/noVNC">@noVNC</a> (noVNC &amp; HTML5 related)
-                <li><a target="github" href="https://github.com/kanaka">github.com/kanaka</a>
-                <li><a target="blog" href="http://blog.n01se.net/kanaka">blog.n01se.net/kanaka</a>
-            </ul>
             <p data-jmpress="fade">
-            Live in Duncanville, TX.
+            I currently live in Duncanville, TX.
             </p>
             <div data-jmpress="fade">
             I have an a beautiful and amazing wife:
@@ -100,13 +69,19 @@
             </ul>
             </div>
             <div data-jmpress="fade">
-            <p>We have just adopted a beautiful little girl:</p>
-            <img height="250" src="imgs/mari.jpg">
+            <h3>Following Me:</h3>
+            <ul>
+                <li><a target="twitter1" href="https://twitter.com/#!/bus_kanaka">@bus_kanaka</a>
+                <li><a target="twitter2" href="https://twitter.com/#!/noVNC">@noVNC</a> (noVNC &amp; HTML5 related)
+                <li><a target="github" href="https://github.com/kanaka">github.com/kanaka</a>
+                <li><a target="blog" href="http://blog.n01se.net/kanaka">blog.n01se.net/kanaka</a>
+            </ul>
             </div>
-	</div>
+        </div>
 
-        <!-- background -->
-        <div id="background" class="step tall-step" data-x="0" data-y="-6000">
+        <!-- (Abbreviated) Technical Background -->
+        <div id="technical-background"
+            class="step tall-step" data-x="-21000" data-y="-6000" data-scale="4">
             <h1>(Abbreviated) Technical Background</h1>
             <ul data-jmpress="fade">
                 <li>Contracted to build a <strong>corporate website</strong> (1996)
@@ -141,24 +116,21 @@
             <div data-jmpress="fade">
             <p><strong>My Goal</strong>: To provide the HTML5 background, framework and resources for you to be able to learn and evaluate HTML5 web app development.</p>
             </div>
-	</div>
-
-
-
-
-        <!-- *************************************************************** -->
-
+        </div>
 
         <!-- Edge of HTML5 -->
-        <div id="edge" class="step" data-x="-1500" data-y="-5000">
+        <div id="edge"
+            class="step" data-x="-9000" data-y="-7000" data-scale="4">
             <h1>The Edge of HTML5</h1>
+            <p>Examples of what is available on the cutting edge of HTML5.</p>
+            <p>Many example will only work in recent browsers (Firefox 11, Chrome 15)</p>
 
             <div data-jmpress="fade">
             <h3>Let's Dive Right In With Some Examples:</h3>
             <ul>
                 <li><a href="http://alteredqualia.com/three/examples/webgl_terrain_dynamic.html" target="possibleex1">Dynamic Terrain Flyover</a>
                 <li><a href="http://madebyevan.com/webgl-water/" target="possibleex2">Water Pool</a>
-                <li><a href="http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#18" target="possibleex3">Speech input</a>
+                <li><a href="http://html5-demos.appspot.com/static/whats-new-with-html5-media/template/index.html#18" target="possibleex3">Speech input</a> (requires recent release of Chrome)
                 <li><a href="http://syntensity.com/static/espeak.html" target="possibleex3b">Text-To-Speech</a>
                 <li><a href="http://browserquest.mozilla.org/" target="possibleex4">BrowserQuest MMO</a>
                 <li><a href="http://www.htmlfivewow.com/demos/audio-visualizer/index.html" target="possibleex5">Audio Analysis and Visualization</a>
@@ -171,60 +143,41 @@
                 <li><a href="http://noVNC.com" target="possibleex9">noVNC</a>
             </ul>
             </div>
-	</div>
+        </div>
 
 
-        <!-- Overview -->
-        <div id="overview" class="step" data-x="0" data-y="-5000">
-            <h1>Overview</h1>
-            
-            <ul>
-                <li> <a href="#about-me">About Me</a>
-                <li> <a href="#edge">Edge of HTML5</a>
-                <li> <a href="#overview">Overview</a> (You are here)
-                <br><br>
-                <li data-jmpress="fade"> Background
-                <ul>
-                    <li> <a href="#history1">HTML5 History</a>
-                    <li> <a href="#so-what-is-html5a">HTML5 Defined</a>
-                </ul>
-                <br><br>
-                <li data-jmpress="fade"> HTML5 Features
-                <ul>
-                    <li> <a href="#levels">HTML5 Levels</a>
-                    <li> <a href="#level0">Level0</a>
-                    <li> <a href="#level1">Level1</a>
-                    <li> <a href="#level2">Level2</a>
-                    <li> <a href="#level3">Level3</a>
-                    <li> <a href="#pulling-it-together1">Pulling it all Together</a>
-                </ul>
-                <br><br>
-                <li data-jmpress="fade"> The Path From Here to There
-                <ul>
-                    <li> <a href="#native-vs-web1">"Native" Apps vs Web Apps</a>
-                    <li> <a href="#resources">A collection of HTML5 Resources</a>
-                </ul>
-            </ul>
-	</div>
+
+        <!-- *************************************************************** -->
 
         <!-- What is HTML5? -->
-        <div id="what-is-html5" class="step" data-x="1500" data-y="-5000">
-            <h1>What is HTML5?</h1>
+        <div id="what-is-html5"
+            class="step" data-x="15000" data-y="-10000" data-scale="20">
+            <h1>What Is HTML5?</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
 
             <div data-jmpress="fade">
-            <p>Unfortunately it's not simple</p>
-            <p>So a bit of history is required</p>
+            <p>Unfortunately the definition of <strong>HTML5</strong> is not simple,
+            so a bit of history is required:</p>
             </div>
+
 	</div>
 
+        <!-- Chronological History-->
+        <div id="history-chronological"
+            class="step" data-x="9500" data-y="-11500" data-scale="6">
+            <h1>A Chronological History</h1>
+        </div>
+
         <!-- History 1991 -->
-        <div id="history1" class="step" data-x="3000" data-y="-5000">
+        <div id="history1"
+            class="step" data-x="7500" data-y="-12000" data-scale="1">
             <div class="html5-timeline">
                 1991
             </div>
 
-            <h1>History of HTML5</h1>
-            <h2>The Start of the Web</h2>
+            <h1>The Start of the Web</h1>
 
             <div data-jmpress="fade">
             <p><strong>Aug 6th, 1991</strong>: From CERN, Tim Berners-Lee releases <a href="http://www.w3.org/History/1994/WWW/Journals/CACM/screensnap2_24c.gif" target="WorldWideWeb">WorldWideWeb</a> on the wide world.</p>
@@ -235,26 +188,27 @@
             <div data-jmpress="fade">
             <p>Must have been a good year: Linus Torvalds announced Linux 19 days later.</p>
             </div>
-	</div>
+        </div>
 
         <!-- original-browser -->
-        <div id="history1a" class="step" data-x="4500" data-y="-5000">
+        <div id="history1a"
+            class="step" data-x="7500" data-y="-11300" data-scale="1">
             <h1>WorldWideWeb - the original browser</h1>
 
             <p><img height="400" src="http://www.w3.org/History/1994/WWW/Journals/CACM/screensnap2_24c.gif"></p>
             <div data-jmpress="fade">
             <p>We've come a long way!</p>
             </div>
-	</div>
+        </div>
 
         <!-- History 1993-1997 -->
-        <div id="history2" class="step" data-x="6000" data-y="-5000">
+        <div id="history2"
+            class="step" data-x="8833" data-y="-12000" data-scale="1">
             <div class="html5-timeline">
                 1993-1997
             </div>
 
-            <h1>History of HTML5</h1>
-            <h2>Rise of the Web as a Platform</h2>
+            <h1>Rise of the Web as a Platform</h1>
 
             <div data-jmpress="fade">
             <p><strong>Feb 1993</strong>: Mosaic browser released; first truly graphical browser</p>
@@ -282,16 +236,16 @@
             <div data-jmpress="fade">
             <p><strong>1997</strong> HTML4 "standard" released</p>
             </div>
-	</div>
+        </div>
 
-        <!-- History 1997-2002 -->
-        <div id="history3" class="step" data-x="7500" data-y="-5000">
+       <!-- History 1997-2002 -->
+        <div id="history3"
+            class="step" data-x="10167" data-y="-12000" data-scale="1">
             <div class="html5-timeline">
                 1997-2007
             </div>
 
-            <h1>History of HTML5</h1>
-            <h2>Fall of the Web as a Platform</h2>
+            <h1>Fall of the Web as a Platform</h1>
 
             <div data-jmpress="fade">
             For the next 10 years, the web stagnates as a platform.
@@ -323,27 +277,30 @@
             <p>But the Web moves ahead in spite of browser stagnation by re-purposing old functionality and growing on the server-side.</p>
             </div>
 
-	</div>
+        </div>
 
         <!-- history: browser share -->
-        <div id="history-browser-share" class="step large-step" data-x="9000" data-y="-5000">
-            <h1>History of HTML5</h1>
+        <div id="history-browser-share"
+            class="step" data-x="10167" data-y="-11200" data-scale="1">
+            <h2>Browser Share 1996-2009</h2>
 
-            <p><img height="600" src="imgs/browser-wars.png"></p>
+            <p><img height="450" src="imgs/browser-wars.png"></p>
             <p>source: wikimedia</p>
-	</div>
+        </div>
 
         <!-- history: engine share -->
-        <div id="history-engine-share" class="step large-step" data-x="10500" data-y="-5000">
-            <h1>History of HTML5</h1>
+        <div id="history-engine-share"
+            class="step" data-x="10167" data-y="-10300" data-scale="1">
+            <h2>Rendering Engine Share 1994-2009</h2>
 
-            <p><img height="500" src="imgs/engine-share.png"></p>
+            <p><img height="450" src="imgs/engine-share.png"></p>
             <p>source: wikimedia</p>
-	</div>
+        </div>
 
 
         <!-- History 2004-Present -->
-        <div id="history4" class="step tall-step" data-x="12000" data-y="-5000">
+        <div id="history4"
+            class="step tall-step" data-x="11500" data-y="-12000" data-scale="1">
             <div class="html5-timeline">
                 2004-Present
             </div>
@@ -392,30 +349,43 @@
             8 Metro interface. HTML/Javascript/CSS is positioned as
             primary way to build new Windows applications.</p>
             </div>
-	</div>
+        </div>
 
         <!-- history: recent browser share -->
-        <div id="recent-browser-share" class="step large-step" data-x="13500" data-y="-5000">
-            <h1>History of HTML5</h1>
+        <div id="recent-browser-share"
+            class="step large-step" data-x="11500" data-y="-11100">
+            <h1>Browser Share 2009-2012</h1>
 
             <p><img height="600" width="900" src="imgs/browser-share.svg"></p>
             <p>source: wikimedia</p>
-	</div>
+        </div>
 
 
-        <div id="history-visual" class="step example-large" data-x="15000" data-y="-5000">
-            <h1>History of HTML5</h1>
-            <h3>The Visual View</h3>
-            <input type="button" value="Load" onclick="load('#evolvex', 'http://evolutionofweb.appspot.com/')">
-            <input type="button" value="Unload" onclick="unload('#evolvex')">
-            </h3>
-            <iframe id="evolvex" width="99%" height="82%">
+        <!-- *************************************************************** -->
+
+        <!-- Visual History-->
+        <div id="history-visual"
+            class="step tall-step" data-x="15000" data-y="-10500" data-scale="6"
+            style="padding-top: 5px;">
+            <h2>A Visual History
+            <input type="button" value="Show" onclick="load('#evolvex', 'http://evolutionofweb.appspot.com/')">
+            <input type="button" value="Hide" onclick="unload('#evolvex')">
+            </h2>
+
+            <div class="html5-logo">
+            </div>
+
+            <iframe id="evolvex" width="99%" height="93%">
             </iframe>
         </div>
 
-        <div id="history-logical" class="step tall-step" data-x="16500" data-y="-5000">
-            <h1>History of HTML5</h1>
-            <h3>The Functional View</h3>
+        <!-- *************************************************************** -->
+
+        <!-- A Functional History-->
+        <div id="history-functional"
+            class="step" data-x="20500" data-y="-8500" data-scale="6">
+            <h1>A Functional History</h1>
+
             <div data-jmpress="fade">
                 <strong>The Static Web</strong>
                 <ul>
@@ -426,7 +396,7 @@
             <div data-jmpress="fade">
                 <strong>The Generated Web</strong>
                 <ul>
-                    <li> Static web pages that are generated/assembled 
+                    <li> Static web pages that are generated/assembled
                     <li> <strong>Associated ideas</strong>: templating, LAMP stack
                     <li> <strong>Backend</strong>: Apache+CGI, PHP, Perl, Python
                 </ul>
@@ -455,14 +425,25 @@
             </div>
         </div>
 
-
         <!-- *************************************************************** -->
 
         <!-- So What is HTML5? -->
-        <div id="so-what-is-html5a" class="step" data-x="0" data-y="-4000">
+        <div id="so-what-is-html5a"
+            class="step" data-x="9000" data-y="-7000" data-scale="5">
             <h1>So What is "HTML5"?</h1>
 
-            <h3>Simple Answer: The W3C HTML5 Specification</h3>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
+        </div>
+
+
+        <!-- So What is HTML5? -->
+        <div id="so-what-is-html5a"
+            class="step" data-x="7500" data-y="-7000" data-scale="1">
+            <h2>Simple Answer: The W3C HTML5 Specification</h2>
+
             <div data-jmpress="fade">
             <p>Not Really!</p>
             <p>In many ways the W3C HTML5 describes what
@@ -470,47 +451,51 @@
             <p>Good for standardization and pedants.</p>
             <p>But fails to explain why HTML5 is getting attention.</p>
             </div>
-	</div>
+        </div>
 
-        <div id="so-what-is-html5b" class="step" data-x="1500" data-y="-4000">
-            <h1>So What is "HTML5"?</h1>
+        <div id="so-what-is-html5b"
+            class="step" data-x="9000" data-y="-7000" data-scale="1">
+            <h2>Another Simple Answer: The WHATWG HTML5 Specification</h2>
 
-            <h3>Another Simple Answer: The WHATWG HTML5 Specification</h3>
             <div data-jmpress="fade">
             <p>Nope.</p>
             <p>WHATWG HTML5 has become just WHATWG HTML (i.e. HTML5+).</p>
             <p>Even WHATWG HTML doesn't cover what most people really mean
             by "HTML5".</p>
             </div>
-	</div>
+        </div>
 
-        <div id="so-what-is-html5c" class="step" data-x="3000" data-y="-4000">
-            <h1>So What is "HTML5"?</h1>
+        <div id="so-what-is-html5c"
+            class="step" data-x="10500" data-y="-7000" data-scale="1">
+            <h2>Another Attempt: The HTML5+CSS3+Javascript Trifecta</h2>
 
-            <h3>Another Attempt: The HTML5+CSS3+Javascript Trifecta</h3>
             <div data-jmpress="fade">
             <p>Still not quite.</p>
             <p>Still leaves out some of the most interesting near-term technologies</p>
             <p></p>
             </div>
-	</div>
+        </div>
 
-        <div id="so-what-is-html5d" class="step tall-step" data-x="4500" data-y="-4000">
-            <h1>So What is "HTML5"?</h1>
+        <div id="so-what-is-html5d"
+            class="step tall-step" data-x="7500" data-y="-6000" data-scale="1">
+            <h2>How about: HTML5 and Related Technologies</h2>
 
-            <h3>How about: HTML5 and Related Technologies</h3>
             <a href="imgs/HTML5-and-related.png" target="and-related"><img height="450" src="imgs/HTML5-and-related.png"></a>
             <div data-jmpress="fade">
             <p>Almost but still something missing</p>
             </div>
-	</div>
+        </div>
 
-        <div id="so-what-is-html5e" class="step tall-step" data-x="6000" data-y="-4000">
-            <h1>So What is "HTML5"?</h1>
+        <div id="so-what-is-html5e"
+            class="step tall-step" data-x="9000" data-y="-6000" data-scale="1">
+            <h2>And Again: The Open Web Platform</h2>
 
-            <h3>And Again: The Open Web Platform</h3>
+            <p><a href="http://platform.html5.org/" target="web-platform">Web Platform Browser Technologies:</a></p>
+            <iframe id="webplat1" width="99%" height="50%"
+                src="http://platform.html5.org/">
+            </iframe>
+
             <p>This "Open Web Platform" is being promoted by Mozilla</p>
-            <a href="http://platform.html5.org/" target="web-platform">Web Platform Big List</a>
             <div data-jmpress="fade">
             <p>So close!</p>
             </div>
@@ -524,46 +509,61 @@
             <div data-jmpress="fade">
             <p><strong>Fast Javascript Engines</strong></p>
             </div>
-	</div>
+        </div>
 
-        <div id="so-what-is-html5f" class="step tall-step" data-x="7500" data-y="-4000">
-            <h1>So What is "HTML5"?</h1>
+        <div id="so-what-is-html5f"
+            class="step tall-step" data-x="10500" data-y="-6000" data-scale="1">
+            <h2>My Take:</h2>
 
-            <h3>My Take:</h3>
             <div data-jmpress="fade">
-            <p>HTML5 describes an evolving set of technologies</p>
+            <p>HTML5 is an evolving set of technologies (especially <em>fast Javascript</em>)</p>
             </div>
             <div data-jmpress="fade">
             <p><strong>and</strong></p>
-            <p>HTML5 describes a paradigm shift (inflection point,
+            <p>HTML5 is a paradigm shift (inflection point,
             whatever), not just the target of that shift</p>
             </div>
             <div data-jmpress="fade">
             <p><strong>and</strong></p>
-            <p>HTML5 describes a community of browser makers, web
+            <p>HTML5 is a community of browser makers, web
             developers, app developers, and standards bodies that are
             driving the web platform shift.</p>
             </div>
             <div data-jmpress="fade">
-            <p>How's that for a definition so broad and generic that it is unfalsifiable?</p>
             <img height="300" src="imgs/cats-staring.jpg">
+            <p>How's that for a definition so broad and generic that it is unfalsifiable?</p>
             </div>
-	</div>
+        </div>
 
 
         <!-- *************************************************************** -->
 
+        <!-- HTML5 Feature Overview -->
+        <div id="feature-overview"
+            class="step" data-x="-15000" data-y="10000" data-scale="20">
+            <h1>HTML5 Feature/Technology Overview</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
 
-        <!-- levels -->
-        <div id="levels" class="step" data-x="0" data-y="-3000">
+            <p>
+            Not a comprehensive overview but hopefully a representative one.
+            </p>
+
+	</div>
+
+        <!-- HTML5 Feature Levels -->
+        <div id="feature-levels"
+            class="step tall-step" data-x="-19000" data-y="11000" data-scale="8">
             <h1>HTML5 Feature Levels</h1>
+
             I've grouped HTML5 Technologies/Features in 4 levels based
             on when I expect them to be ready for use.
             <div data-jmpress="fade">
                 <h2>Level0</h2>
                 <ul>
                     <li> The past
-                    <li> Basically pre-HTML5 but foundational
+                    <li> Pre-HTML5 but foundational
                 </ul>
             </div>
             <div data-jmpress="fade">
@@ -584,10 +584,12 @@
                     <li> The farther future
                 </ul>
             </div>
-	</div>
+
+        </div>
 
         <!-- levels-reach -->
-        <div id="levels-reach" class="step tall-step" data-x="1500" data-y="-3000">
+        <div id="levels-reach"
+            class="step tall-step" data-x="-19000" data-y="10000" data-scale="1.5">
             <h1>HTML5 Browser Reach by Level</h1>
             <div data-jmpress="fade">
                 <h2>Level0</h2>
@@ -618,10 +620,12 @@
                     <li> No commitment from MS for IE
                 </ul>
             </div>
-	</div>
+        </div>
+
 
         <!-- levels-score -->
-        <div id="levels-score" class="step" data-x="3000" data-y="-3000">
+        <div id="levels-score"
+            class="step" data-x="-19000" data-y="11500" data-scale="1.6">
             <h1>HTML5 Levels vs HTML5Test Score</h1>
             <p> The site <a href="http://html5test.com" target="html5test">html5test.com</a> provides
             a numerical score based on HTML5 feature support which can loosely map to feature level.</a>
@@ -649,10 +653,12 @@
                     <li> 350-500
                 </ul>
             </div>
-	</div>
+        </div>
+
 
         <!-- levels -->
-        <div id="levels-browsers" class="step tall-step" data-x="4500" data-y="-3000">
+        <div id="levels-browsers"
+            class="step tall-step" data-x="-19000" data-y="13000" data-scale="1.6">
             <h1>HTML5 Browser Levels</h1>
             <p> Browsers can be loosely grouped into levels based on the
             level features they support and their HTML5Test score.
@@ -689,31 +695,35 @@
                     <li><div class="warn">X</div><li><div class="partial">10</div><li>15<li><div class="partial">5.1</div><li><div class="partial">12</div><li><div class="warn">X</div><li><div class="warn">X</div>
                 </ul>
             </div>
-	</div>
+        </div>
 
         <!-- browser-score-time -->
-        <div id="browser-score-time" class="step large-step" data-x="6000" data-y="-3000">
+        <div id="browser-score-time"
+            class="step large-step" data-x="-17000" data-y="10000" data-scale="1.6">
             <h2>Browser Capability (HTML5Test Score) Over Time</h2>
             <iframe src="browser-time-score.html" width="100%" height="95%">
             </iframe>
-	</div>
+        </div>
 
         <!-- browser-score-share -->
-        <div id="browser-score-share" class="step large-step" data-x="7500" data-y="-3000">
+        <div id="browser-score-share"
+            class="step large-step" data-x="-17000" data-y="11500" data-scale="1.6">
             <h2>Browser Capability (HTML5Test Score) vs Market Share</h2>
             <iframe src="browser-score-share.html" width="100%" height="95%">
             </iframe>
-	</div>
+        </div>
 
         <!-- browser-level-share -->
-        <div id="browser-level-share" class="step large-step" data-x="9000" data-y="-3000">
+        <div id="browser-level-share"
+            class="step large-step" data-x="-17000" data-y="13000" data-scale="1.6">
             <h2>Browser HTML5 Feature Level vs Market Share</h2>
             <iframe src="browser-score-share-stack.html" width="100%" height="95%">
             </iframe>
-	</div>
+        </div>
 
         <!-- Chrome Frame -->
-        <div id="chrome-frame" class="step" data-x="10500" data-y="-3000">
+        <div id="chrome-frame"
+            class="step" data-x="-16000" data-y="13000" data-scale="0.2">
             <h1>But what about IE 6, 7 and 8?</h1>
             <div data-jmpress="fade">
             <a href="http://www.google.com/chromeframe"><h2>Chrome Frame!</h2></a>
@@ -726,33 +736,26 @@
             Does not require administrative privilege to install.
             </p>
             <p data-jmpress="fade">
-            Or use polyfills and fallbacks (but beware terrible
+            Or use polyfills and fallbacks (but beware of poor 
             Javascript performance).
             </p>
 
-	</div>
+        </div>
+
 
 
         <!-- *************************************************************** -->
 
-
-        <!-- Feature Overview -->
-        <div id="feature-overview" class="step" data-x="-1500" data-y="-1000">
-            <h1>HTML5 Feature Overview</h1>
-            <p data-jmpress="fade">
-            Let's do an overview of HTML5 (and related) technologies.
-            </p>
-            <p data-jmpress="fade">
-            Not a comprehensive overview but hopefully representative.
-            </p>
-	</div>
-
-        <!-- TODO: other intro material: Chrome Developer Console,
-        vendor prefixes, Fast Javascript -->
+        <!-- HTML5 Features -->
+        <div id="features"
+            class="step tall-step" data-x="-11000" data-y="11000" data-scale="8">
+            <h1>HTML5 Features/Technologies/APIs</h1>
+        </div>
 
         <!-- Sample Slide -->
-        <div id="sample" class="step" data-x="0" data-y="-1000">
-            <div style="position: relative; top: -35px; left: -50px;">
+        <div id="sample"
+            class="step" data-x="-11000" data-y="9500" data-scale="1">
+            <div style="position: relative; top: -15px; left: -30px;">
                 Sample Feature Slide
             </div>
             <div class="browser-info">
@@ -780,10 +783,11 @@
             <p>Sometimes a "relevant" picture</p>
             <img height=220 src="imgs/cat-annoyed.jpg">
             </div>
-	</div>
+        </div>
 
         <!-- Developer Tools -->
-        <div id="developer-tools" class="step" data-x="1500" data-y="-1000">
+        <div id="developer-tools"
+            class="step" data-x="-11000" data-y="10500" data-scale="1">
             <h1>Chrome Developer Tools</h1>
             <p data-jmpress="fade">
             Chrome (and most recent browsers) have a powerful set of
@@ -801,16 +805,15 @@
             <p data-jmpress="fade">
             We'll use the Chrome Developer Tools to dive deeper into various examples to show how they work.
             </p>
-	</div>
-
-
+        </div>
 
         <!-- *************************************************************** -->
 
-
         <!-- Level0 -->
-        <div id="level0" class="step" data-x="-1500" data-y="0">
+        <div id="level0"
+            class="step tall-step" data-x="-13000" data-y="10000" data-scale="3">
             <h1>Level0</h1>
+
             <p data-jmpress="fade">
                 That's so three years ago.
             </p>
@@ -818,13 +821,14 @@
                 Or in the immortal words of the French knights ...
             </p>
             <div data-jmpress="fade">
+                <img height="220" src="imgs/french-surprise.jpg">
                 <p>"We already got one"</p>
-                <img height="350" src="imgs/french-surprise.jpg">
             </div>
         </div>
 
         <!-- New Semantic Elements -->
-        <div id="semantics" class="step" data-x="0" data-y="0">
+        <div id="semantics"
+            class="step" data-x="-14100" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -847,9 +851,10 @@
             <p id="semantics4" data-jmpress="fade">
             <img height=220 src="imgs/cat-tired.jpg">
             </p>
-	</div>
+        </div>
 
-        <div id="semantics-example" class="step example" data-x="0" data-y="700">
+        <div id="semantics-example"
+            class="step example" data-x="-14100" data-y="10800" data-scale="0.3">
             <h1>New Semantic Elements Example</h1>
             <input type="button" value="Original (HTML4)" onclick="load('#sem1', 'http://diveintohtml5.info/examples/blog-original.html')">
             <input type="button" value="Semantic (HTML5)" onclick="load('#sem1', 'http://diveintohtml5.info/examples/blog-html5.html')">
@@ -859,7 +864,8 @@
         </div>
 
         <!-- CSS @font-face -->
-        <div id="font-face" class="step" data-x="1500" data-y="0">
+        <div id="font-face"
+            class="step" data-x="-13700" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -885,9 +891,10 @@
             <p id="font-face5" data-jmpress="fade">
             WOFF (Web Open Font Format) is a level2 feature with wide support.
             </p>
-	</div>
+        </div>
 
-        <div id="font-face-example" class="step example-large" data-x="1500" data-y="800">
+        <div id="font-face-example"
+            class="step example-large" data-x="-13700" data-y="10800" data-scale="0.3">
             <h1>@font-face Example</h1>
             <input type="button" value="Apple Typography Showcase" onclick="load('#ff1', 'http://www.apple.com/html5/showcase/typography/')">
             <input type="button" value="Unload" onclick="unload('#ff1')">
@@ -897,7 +904,8 @@
 
 
         <!-- CSS position:fixed -->
-        <div id="fixed" class="step" data-x="3000" data-y="0">
+        <div id="fixed"
+            class="step" data-x="-13300" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -936,11 +944,12 @@
                     </ul>
             </ul>
             </div>
-	</div>
+        </div>
 
 
         <!-- Web Storage -->
-        <div id="webstorage" class="step" data-x="4500" data-y="0">
+        <div id="webstorage"
+            class="step" data-x="-12900" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -966,9 +975,10 @@
             data, consider indexedDB if it's available.
             </p>
             </div>
-	</div>
+        </div>
 
-        <div id="webstorage-example" class="step example" data-x="4500" data-y="700">
+        <div id="webstorage-example"
+            class="step example" data-x="-12900" data-y="10800" data-scale="0.3">
             <h1>Web Storage Example</h1>
             <input type="button" value="HTML5Rocks Web Storage Demo" onclick="load('#store1', 'http://slides.html5rocks.com/#web-storage')">
             <input type="button" value="Unload" onclick="unload('#store1')">
@@ -978,7 +988,8 @@
 
 
         <!-- Canvas 2D Context -->
-        <div id="canvas" class="step" data-x="6000" data-y="0">
+        <div id="canvas"
+            class="step" data-x="-12500" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -990,7 +1001,7 @@
 
             <h1>Canvas 2D Context</h1>
             <p data-jmpress="fade">
-            Raster graphics for the web. First-class &lt;img&gt; tag. 
+            Raster graphics for the web. First-class &lt;img&gt; tag.
             </p>
             <p data-jmpress="fade">
             The first part of the Flash killer trifecta: Canvas+SVG+&lt;video&gt;
@@ -1001,9 +1012,10 @@
             <div data-jmpress="fade">
                 <a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_canvas.htm">Hands On (Microsoft)</a>
             </div>
-	</div>
+        </div>
 
-        <div id="canvas-example" class="step example-large" data-x="6000" data-y="800">
+        <div id="canvas-example"
+            class="step example-large" data-x="-12500" data-y="10800" data-scale="0.3">
             <h1>2D Canvas Examples</h1>
             <input type="button" value="IrishSpring" onclick="load('#canvasex', 'http://ie.microsoft.com/testdrive/Performance/IrishSpring/')">
             <input type="button" value="Crazy Tunnel" onclick="load('#canvasex', 'http://www.catuhe.com/msdn/canvas/tunnel.htm')">
@@ -1021,7 +1033,8 @@
 
 
         <!-- CSS3 @media-queries -->
-        <div id="media-queries" class="step" data-x="7500" data-y="0">
+        <div id="media-queries"
+            class="step" data-x="-12100" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1053,15 +1066,16 @@
                 <li><a href="http://forefathersgroup.com/" target="forefather">Forefathers Group</a>
             </ul>
             </div>
-	</div>
+        </div>
 
 
         <!-- *************************************************************** -->
 
-
         <!-- Level1 -->
-        <div id="level1" class="step" data-x="-4500" data-y="2000">
+        <div id="level1"
+            class="step tall-step" data-x="-9000" data-y="10000" data-scale="3">
             <h1>Level1</h1>
+
             <p data-jmpress="fade">
             The Web Today
             </p>
@@ -1074,7 +1088,8 @@
         </div>
 
         <!-- Fast JavaScript -->
-        <div id="fast-javascript" class="step" data-x="-3000" data-y="2000">
+        <div id="fast-javascript"
+            class="step" data-x="-10100" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1089,7 +1104,7 @@
                 One Ring to bring them all and in the darkness bind them.</em></p>
             </p>
 
-            <p data-jmpress="fade">Javascript is fast. 
+            <p data-jmpress="fade">Javascript is fast.
             Chrome triggered a Javascript <a href="http://arewefastyet.com/old-awfy.php" target="arewefast">performance arms race.</a></p>
 
             <p data-jmpress="fade">
@@ -1106,11 +1121,11 @@
             with a <strong>~</strong> to indicate that this is highly dependent on
             the device and not just the OS/browser version.
             </p>
-
-	</div>
+        </div>
 
         <!-- JavaScript Platform -->
-        <div id="javascript-platform" class="step" data-x="-1500" data-y="2000">
+        <div id="javascript-platform"
+            class="step" data-x="-10100" data-y="10800" data-scale="0.3">
 
             <h1>JavaScript is a Platform Language</h1>
             <div>
@@ -1141,10 +1156,11 @@
             </ul>
             </div>
 
-	</div>
+        </div>
 
         <!-- CSS3 borders -->
-        <div id="borders" class="step large-step" data-x="0" data-y="2000">
+        <div id="borders"
+            class="step large-step" data-x="-9700" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1165,10 +1181,11 @@
             <iframe id="borderex" width="100%" height="70%">
             </iframe>
             </div>
-	</div>
+        </div>
 
         <!-- CSS3 transforms -->
-        <div id="transforms" class="step" data-x="1500" data-y="2000">
+        <div id="transforms"
+            class="step" data-x="-9300" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1185,9 +1202,10 @@
             <p data-jmpress="fade">
                 Used together can be used simulate 3D effects.
             </p>
-	</div>
+        </div>
 
-        <div id="transforms-example" class="step example-large" data-x="1500" data-y="2800">
+        <div id="transforms-example"
+            class="step example-large" data-x="-9300" data-y="10800" data-scale="0.3">
             <h1>CSS3 2D Tranforms Examples</h1>
             <input type="button" value="Hands On" onclick="load('#transex', 'http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_2d-transforms.htm')">
             <input type="button" value="cssSandpaper" onclick="load('#transex', 'http://www.useragentman.com/tests/cssSandpaper/cube3.html')">
@@ -1196,8 +1214,10 @@
             </iframe>
         </div>
 
+
         <!-- SVG -->
-        <div id="svg" class="step" data-x="3000" data-y="2000">
+        <div id="svg"
+            class="step" data-x="-8900" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1214,9 +1234,10 @@
             <p data-jmpress="fade">
                 The second part of the Flash killer trifecta: Canvas+SVG+&lt;video&gt;
             </p>
-	</div>
+        </div>
 
-        <div id="svg-example" class="step example-large" data-x="3000" data-y="3000">
+        <div id="svg-example"
+            class="step example-large" data-x="-8900" data-y="10800" data-scale="0.3">
             <h1>SVG</h1>
             <input type="button" value="Impact Chart" onclick="load('#svgex', 'http://raphaeljs.com/github/impact.html')">
             <input type="button" value="World Map" onclick="load('#svgex', 'http://raphaeljs.com/world/')">
@@ -1226,7 +1247,8 @@
         </div>
 
         <!-- video tag -->
-        <div id="video-tag" class="step" data-x="4500" data-y="2000">
+        <div id="video-tag"
+           class="step" data-x="-8500" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1263,10 +1285,11 @@
                 <li><a href="http://dev.opera.com/articles/view/custom-html5-video-player-with-css3-and-jquery/" target="custom-controls">Custom Controls Tutorial</a>
             </ul>
             </div>
-	</div>
+        </div>
 
         <!-- audio tag -->
-        <div id="video-tag" class="step" data-x="6000" data-y="2000">
+        <div id="video-tag"
+            class="step" data-x="-8100" data-y="10400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1297,10 +1320,11 @@
                 <!-- <li><a href="http://randallagordon.com/jaraoke/#" target="jaraoke">Jaraoke</a> -->
             </ul>
             </div>
-	</div>
+        </div>
 
         <!-- geolocation -->
-        <div id="geolocation" class="step large-step" data-x="7500" data-y="2000">
+        <div id="geolocation"
+            class="step large-step" data-x="-7900" data-y="10800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1322,14 +1346,14 @@
             <iframe id="geolocex" width="100%" height="70%">
             </iframe>
             </div>
-	</div>
+        </div>
 
 
         <!-- *************************************************************** -->
 
-
         <!-- Level2 -->
-        <div id="level2" class="step" data-x="-1500" data-y="4000">
+        <div id="level2"
+            class="step tall-step" data-x="-13000" data-y="12500" data-scale="3">
             <h1>Level2</h1>
             <p data-jmpress="fade">
                 All desktop browsers with significant market share
@@ -1342,9 +1366,9 @@
             </p>
         </div>
 
-
         <!-- WOFF -->
-        <div id="woff" class="step" data-x="0" data-y="4000">
+        <div id="woff"
+            class="step" data-x="-14000" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1374,10 +1398,11 @@
                     </ul>
             </ul>
             </div>
-	</div>
+        </div>
 
         <!-- Inline SVG -->
-        <div id="inline-svg" class="step" data-x="1500" data-y="4000">
+        <div id="inline-svg"
+            class="step" data-x="-13600" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1404,11 +1429,11 @@
                 <li><a href="http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html" target="svg-edit">SVG Editor</a>
             </ul>
             </div>
-	</div>
-
+        </div>
 
         <!-- offline apps / cache manifest -->
-        <div id="offline" class="step" data-x="3000" data-y="4000">
+        <div id="offline"
+            class="step" data-x="-13200" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1441,11 +1466,12 @@
                 <li><a href="http://everytimezone.com/" target="offex2">Every Time Zone</a>
             </ul>
             </div>
-            
+
         </div>
 
         <!-- Web Workers -->
-        <div id="workers" class="step" data-x="4500" data-y="4000">
+        <div id="workers"
+            class="step" data-x="-12800" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1491,9 +1517,9 @@
             </div>
         </div>
 
-        
         <!-- CSS3 transitions -->
-        <div id="transitions" class="step" data-x="6000" data-y="4000">
+        <div id="transitions"
+            class="step" data-x="-12400" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1520,7 +1546,8 @@
         </div>
 
         <!-- CSS3 animations -->
-        <div id="animations" class="step" data-x="7500" data-y="4000">
+        <div id="animations"
+            class="step" data-x="-12000" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1550,34 +1577,9 @@
             </div>
         </div>
 
-        <!-- history -->
-        <!--
-        <div id="history" class="step" data-x="9000" data-y="4000">
-            <div class="browser-info">
-                <img class="browser-image" src="imgs/all-browsers.png">
-                <ul class="browser-list">
-                    <li>10<li>4.0<li>5.0<li>?<li>11.5<li>5.0<li>?
-                </ul>
-                <div class="html5-level">level2</div>
-                <div class="html5-spec"><a href=""></a></div>
-            </div>
-            W3C HTML5
-
-            <h1>history</h1>
-            - enables proper infinite scroll:
-              http://warpspire.com/talks/responsive/
-
-            http://robertnyman.com/html5/history-api/
-            http://warpspire.com/experiments/history-api/
-                - infinite scroll
-            http://lab.simurai.com/stars/
-                - History API, back/forward without page reload
-                - Also SVG effects for HTML
-        </div>
-        -->
-
         <!-- WebSockets -->
-        <div id="websockets" class="step" data-x="10500" data-y="4000">
+        <div id="websockets"
+            class="step" data-x="-14000" data-y="12800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1625,26 +1627,10 @@
             </div>
         </div>
 
-        <!-- SVG Filters -->
-        <!--
-        <div id="svg-filters" class="step" data-x="12000" data-y="4000">
-            <div class="browser-info">
-                <img class="browser-image" src="imgs/all-browsers.png">
-                <ul class="browser-list">
-                    <li>10<li>3.0<li>5.0/8.0<li>6.0<li>9.0<li>X<li>X
-                </ul>
-                <div class="html5-level">level2</div>
-                <div class="html5-spec"><a href=""></a></div>
-            </div>
-
-            <h1>SVG filters</h1>
-            http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_svg-filter-effects.htm
-        </div>
-        -->
-
 
         <!-- File / File Reader -->
-        <div id="file" class="step" data-x="13500" data-y="4000">
+        <div id="file"
+            class="step" data-x="-13600" data-y="12800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1676,12 +1662,12 @@
                 </ul>
             </ul>
             </div>
-            
-            
         </div>
 
+
         <!-- binary -->
-        <div id="binary" class="step large-step" data-x="15000" data-y="4000">
+        <div id="binary"
+            class="step large-step" data-x="-13200" data-y="12800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1720,7 +1706,7 @@
                 </ul>
             </ul>
             </div>
-            
+
 
             <h2>Typed Arrays</h2>
             <p data-jmpress="fade">
@@ -1745,8 +1731,10 @@
             </div>
         </div>
 
+
         <!-- requestAnimationFrame -->
-        <div id="" class="step" data-x="18000" data-y="4000">
+        <div id="requestAnimationFrame"
+            class="step" data-x="-12800" data-y="12800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1782,7 +1770,8 @@
         </div>
 
         <!-- indexedDB -->
-        <div id="" class="step" data-x="19500" data-y="4000">
+        <div id="indexedDB"
+            class="step" data-x="-12400" data-y="12800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1815,9 +1804,9 @@
             </div>
         </div>
 
-
         <!-- CSS3 3D transforms -->
-        <div id="" class="step" data-x="21000" data-y="4000">
+        <div id="3d-transforms"
+            class="step" data-x="-12000" data-y="12800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1859,36 +1848,9 @@
             </p>
         </div>
 
-
-
-        <!-- CSS Flexbox -->
-        <!--
-        <div id="" class="step" data-x="22500" data-y="4000">
-            <div class="browser-info">
-                <img class="browser-image" src="imgs/all-browsers.png">
-                <ul class="browser-list">
-                    <li>10<li>2.0<li>4.0<li>3.1<li>X<li>3.2<li>2.1
-                </ul>
-                <div class="html5-level">level2</div>
-                <div class="html5-spec"><a href=""></a></div>
-            </div>
-
-            <h1>CSS Flexbox</h1>
-            http://icondeposit.wdfiles.com/local--files/blog%3Apure-css3-flexbox-tutorial/CSS3%20Flexbox.html
-            http://www.gwilym.com/flexbox/example-1.html
-            http://www.gwilym.com/flexbox/example-2.html
-            http://www.gwilym.com/flexbox/example-4.html
-            http://www.gwilym.com/flexbox/example-5.html
-            http://www.gwilym.com/flexbox/example-6.html
-            http://www.gwilym.com/flexbox/example-7.html
-            http://www.gwilym.com/flexbox/example-8.html
-            http://www.gwilym.com/flexbox/example-9.html
-            http://www.gwilym.com/flexbox/example-10.html
-        </div>
-        -->
-
         <!-- Form Features -->
-        <div id="" class="step" data-x="24000" data-y="4000">
+        <div id="form-features"
+            class="step" data-x="-14000" data-y="13200" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1904,7 +1866,7 @@
             Dates, and ranges and colors, oh my!
             </p>
             <p data-jmpress="fade">
-            Advanced form elements were historically done with Javascript and styling. 
+            Advanced form elements were historically done with Javascript and styling.
             </p>
             <p data-jmpress="fade">
             Adds native form capabilities: date, range, search, color, number, required, placeholder text, validators, search boxes, etc.
@@ -1928,8 +1890,10 @@
             </div>
         </div>
 
+
         <!-- Touch events -->
-        <div id="touch" class="step" data-x="25500" data-y="4000">
+        <div id="touch"
+            class="step" data-x="-13600" data-y="13200" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -1961,15 +1925,16 @@
             </ul>
             </div>
 
-            
+
         </div>
+
 
 
         <!-- *************************************************************** -->
 
-
         <!-- Level3 -->
-        <div id="level3" class="step" data-x="-1500" data-y="6000">
+        <div id="level3"
+            class="step tall-step" data-x="-9000" data-y="12500" data-scale="3">
             <h1>Level3</h1>
             <div data-jmpress="fade">
                 <p>Pure awesome!</p>
@@ -1980,9 +1945,9 @@
             </p>
         </div>
 
-
         <!-- Device Orientation -->
-        <div id="orientation" class="step" data-x="0" data-y="6000">
+        <div id="orientation"
+            class="step" data-x="-8400" data-y="11800" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -2012,50 +1977,10 @@
             </div>
         </div>
 
-        <!-- Server-sent events -->
-        <!--
-        <div id="sse" class="step" data-x="1500" data-y="6000">
-        Server-sent events
-            <div class="browser-info">
-                <img class="browser-image" src="imgs/all-browsers.png">
-                <ul class="browser-list">
-                    <li>X<li>6.0<li>6.0<li>5.0<li>9.0<li>4.0<li>X
-                </ul>
-                <div class="html5-level">level3</div>
-                <div class="html5-spec"><a href=""></a></div>
-            </div>
-            W3C HTML5 adjunct
-
-            - Server push (without client polling)
-            - Sites between long-poll and WebSockets
-
-            http://googlecodesamples.com/html5/sse/sse.html
-        </div>
-        -->
-
-        <!-- Shared Web Workers -->
-        <!--
-        <div id="shared-workers" class="step" data-x="3000" data-y="6000">
-            <div class="browser-info">
-                <img class="browser-image" src="imgs/all-browsers.png">
-                <ul class="browser-list">
-                    <li>X<li>X<li>4.0<li>5.0<li>10.6<li>5.0<li>X
-                </ul>
-                <div class="html5-level">level3</div>
-                <div class="html5-spec"><a href=""></a></div>
-            </div>
-
-            <h1>Shared Web Workers</h1>
-            - Like Web Workers, but web worker instances can be shared
-              between tabs from the same domain
-
-            http://www.whatwg.org/demos/workers/shared/003/test.html
-        </div>
-        -->
-
 
         <!-- WebGL (3D canvas) -->
-        <div id="webgl" class="step" data-x="4500" data-y="6000">
+        <div id="webgl"
+            class="step" data-x="-8400" data-y="12100" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -2107,7 +2032,8 @@
         </div>
 
         <!-- Web audio / audio data -->
-        <div id="webaudio" class="step" data-x="6000" data-y="6000">
+        <div id="webaudio"
+            class="step" data-x="-8400" data-y="12400" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -2153,7 +2079,8 @@
         </div>
 
         <!-- full screen -->
-        <div id="fullscreen" class="step" data-x="7500" data-y="6000">
+        <div id="fullscreen"
+            class="step" data-x="-8400" data-y="12700" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -2187,7 +2114,8 @@
         </div>
 
         <!-- web notifications -->
-        <div id="notifications" class="step" data-x="9000" data-y="6000">
+        <div id="notifications"
+            class="step" data-x="-8400" data-y="13000" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -2221,7 +2149,8 @@
         </div>
 
         <!-- Filesystem & FileWriter API -->
-        <div id="filesystem" class="step" data-x="10500" data-y="6000">
+        <div id="filesystem"
+            class="step" data-x="-8400" data-y="13300" data-scale="0.3">
             <div class="browser-info">
                 <img class="browser-image" src="imgs/all-browsers.png">
                 <ul class="browser-list">
@@ -2254,11 +2183,42 @@
                 </ul>
             </ul>
             </div>
-            
+
+        </div>
+
+        <!-- WebRTC & getUserMedia -->
+        <div id="webrtc"
+            class="step" data-x="-8000" data-y="11800" data-scale="0.3">
+            <div class="browser-info">
+                <img class="browser-image" src="imgs/all-browsers.png">
+                <ul class="browser-list">
+                    <li>?<li>?<li>?<li>X<li>X<li>X<li>X
+                </ul>
+                <div class="html5-level">level3</div>
+                <div class="html5-spec"><a href="http://dev.w3.org/2011/webrtc/editor/webrtc.html">W3C WebRTC</a></div>
+                <div class="html5-spec"><a href="http://dev.w3.org/2011/webrtc/editor/getusermedia.html">W3C getUserMedia</a></div>
+                <div class="html5-spec"><a href="http://tools.ietf.org/wg/rtcweb/">IETF RTC Protocols</a></div>
+            </div>
+
+            <h1>WebRTC & getUserMedia</h1>
+
+            <div data-jmpress="fade">
+                <p>Browser to browser streaming media</p>
+            </div>
+
+            <div data-jmpress="fade">
+                <p>P2P but TURN/STUN server required</p>
+            </div>
+
+            <div data-jmpress="fade">
+                Mozilla <a href="http://www.h-online.com/open/news/item/Mozilla-shows-WebRTC-browser-based-video-calling-1517803.html">WebRTC article and video</a>
+            </div>
+
         </div>
 
         <!-- More Level3 -->
-        <div id="more-level3" class="step" data-x="12000" data-y="6000">
+        <div id="more-level3"
+            class="step" data-x="-8000" data-y="12100" data-scale="0.3">
 
             <h1>And More Level3 ...</h1>
 
@@ -2279,9 +2239,9 @@
 
         <!-- *************************************************************** -->
 
-
         <!-- Pulling it together -->
-        <div id="pulling-it-together1" class="step" data-x="0" data-y="9000">
+        <div id="pulling-it-together1"
+            class="step" data-x="-11000" data-y="11500" data-scale="1">
             <h1>Pulling It All Together</h1>
             <h3>More HTML5 Demos and Examples</h3>
             <div data-jmpress="warp-up">
@@ -2317,7 +2277,8 @@
 
 
         <!-- Pulling it together -->
-        <div id="pulling-it-together2" class="step tall-step" data-x="1500" data-y="9000">
+        <div id="pulling-it-together2"
+            class="step" data-x="-11000" data-y="12300" data-scale="1">
             <h1>Pulling It All Together</h1>
             <h3>HTML5 Demos with UIs</h3>
             <div data-jmpress="warp-up">
@@ -2341,15 +2302,18 @@
                 </ul>
             </ul>
             </div>
+
         </div>
 
+
         <!-- Pulling it together -->
-        <div id="pulling-it-together3" class="step tall-step" data-x="3000" data-y="9000">
+        <div id="pulling-it-together3"
+            class="step" data-x="-11000" data-y="13000" data-scale="1">
             <h1>Pulling It All Together</h1>
             <h3>Advanced HTML5 Demos with UIs</h3>
             <div data-jmpress="warp-up">
             <ul>
-                <li><a href="http://noVNC.com?host=kanaka.myvnc.com&port=18009" target="moreex9">noVNC</a>
+                <li><a href="http://noVNC.com" target="moreex9">noVNC</a>
                 <ul>
                     <li> CSS3 borders
                     <li> Media Queries
@@ -2375,158 +2339,37 @@
 
 
         <!-- *************************************************************** -->
-        
-        <!-- Native vs Web -->
-        <div id="native-vs-web1" class="step tall-step" data-x="0" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-            <h3>What's the difference?</h3>
-        </div>
 
-        <div id="native-vs-web2" class="step" data-x="1500" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-
-            <h3>Compiled Object Code vs Interpreted Source?</h3>
-            <div data-jmpress="fade">
-            <p>Nope.</p>
-            <p>Python/perl/ruby programs are native but interpreted.</p>
-            <p>Android apps are Dalvik bytecode; somewhere in the middle.</p>
-            <p>Javascript is a compile target for many languages.</p>
-            <p>Google's NaCl projects allows compiled code in web apps</p>
-            </div>
-        </div>
-
-        <div id="native-vs-web3" class="step" data-x="3000" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-
-            <h3>Installed vs Loaded On Demand?</h3>
-            <div data-jmpress="fade">
-            <p>Nope.</p>
-            <p>Web Apps can work offline.</p>
-            <p>Some native apps update (parts of) themselves on startup.</p>
-            </div>
-        </div>
-
-        <div id="native-vs-web4" class="step" data-x="4500" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-
-            <h3>Run in browser or not?</h3>
-            <div data-jmpress="fade">
-            <p>Nope.</p>
-            <p>Web apps can run standalone or from shortcuts (with no browser UI)</p>
-            </div>
-        </div>
-
-        <div id="native-vs-web5" class="step" data-x="6000" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-
-            <h3>Integration with Native APIs?</h3>
-            <div data-jmpress="fade">
-            <p>Nope.</p>
-            <p>Phonegap/Cordova blurs the line</p>
-            <p>Apps on Windows Metro, webOS, Tizen, QT7: native or web apps?</p>
-            </div>
-        </div>
-
-        <div id="native-vs-web6" class="step" data-x="7500" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-
-            <h3>App Marketplace vs Web Download?</h3>
-            <div data-jmpress="fade">
-            <p>Nope.</p>
-            <p>Chrome Web Store is for web apps.</p>
-            <p>Mozilla Marketplace will be generic web app marketplace.</p>
-            <p>PhoneGap/Cordova can package up web apps for Android/Apple app markets</p>
-            </div>
-        </div>
-
-        <div id="native-vs-web7" class="step" data-x="9000" data-y="10500">
-            <h1>"Native" App vs Web App</h1>
-
-            <h3>So What is the Difference?</h3>
-            <div data-jmpress="fade">
-            <p>Really comes down to control of distribution, discovery and monetization.</p>
-            <p>iOS apps are in Apple's walled garden</p>
-            <ul>
-                <li> Pros: high signal to noise, easier to monetize.
-                <li> Cons: Apple takes a cut, beholden to Apple's whims. 
-            </ul>
-            <p>"Native" apps are products, web apps more like services (kind-of).</p>
-            <p>Web apps are harder to sell as a product, but easier to monetize via advertising.</p>
-            </div>
-        </div>
-
-        <div id="richness-vs-reach" class="step" data-x="10500" data-y="10500">
-            <h1>Richness vs Reach</h1>
-
-            <div data-jmpress="fade">
-            <h3>"Native" Apps Have Richness</h3>
-            <p>"Native" apps can maximize the richness of the user experience.</p>
-            <p>Able to take full advantage of the hardware.</p>
-            <p>Target hardware and software are finite, knowable and testable.</p>
-            <p>Least common denominator factor is less of an issue.</p>
-            </div>
-
-            <div data-jmpress="fade">
-            <h3>Web Apps Have Reach</h3>
-            <p>Number of people/platforms that can be reached is maximized</p>
-            <p>Smartphones will always have web browsers, therefore "Native" app reach will always be a subset of web app reach.</p>
-            <p>Limitless variations possible of hardware and browser versions</p>
-            <p>Do you go after "least common denominator" or sacrifice your reach.</p>
-            </div>
-        </div>
-
-        <div id="html5-fitness" class="step" data-x="12000" data-y="10500">
-            <h1>HTML5 Application Fitness</h1>
-
-            <div data-jmpress="fade">
-            <h3>Good Match</h3>
-            <p>Content and media delivery (HTML5 has become one of the best design platforms)</p>
-            <p>Casual games (non-twitch)</p>
-            <p>Apps with tight social network integration</p>
-            </div>
-
-            <div data-jmpress="fade">
-            <h3>Not Yet A Good Match</h3>
-            <p>Device specific software/utilities: camera, contacts, etc</p>
-            <p>Twitch games</p>
-            <p>Mostly offline apps (soon but not yet)</p>
-            <p>Sophisticated animation/interaction requirements (however the line is moving quickly)</p>
-            </div>
-        </div>
-
-        <div id="progressive-enhancement" class="step" data-x="13500" data-y="10500">
-            <h1>Consider Progressive Enhancement</h1>
-
-            <ol>
-                <li data-jmpress="fade"><p>Develop Web App First</p>
-                <li data-jmpress="fade"><p>Use PhoneGap/Cordova or AppMobi to enter "native" marketplaces</p>
-                <li data-jmpress="fade"><p>When you encounter richness barriers, convert sensitive parts to "native" languages, maintain core design/content rendering in a UIWebView (or equivalent)</p>
-                <li data-jmpress="fade"><p>If necessary, convert whole app to the "native" language.</p>
-            </ol>
-        </div>
-
-        <!-- Source Luke -->
-        <div id="source-luke" class="step" data-x="15000" data-y="10500">
-            <h1>Use the Source</h1>
-            <p data-jmpress="fade">
-            The view source menu is responsible for much of the
-            success of the Web. Defacto Open Source<br>
-            </p>
-            <p data-jmpress="fade">
-            Don't reinvent the wheel. There are many thousands of
-            Javascript libraries and frameworks (see <a
-                href="https://github.com/bebraw/jswiki/wiki">jswiki</a>)
-            and most are under permissive license Open Source
-            libraries. Use them!</p>
-            <div data-jmpress="fade">
-            <img src="imgs/source-luke.jpg">
+        <!-- From Here to There -->
+        <div id="here-to-there"
+            class="step" data-x="15000" data-y="10000" data-scale="20">
+            <h1>From Here to There</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
             </div>
 	</div>
 
+        <!-- *************************************************************** -->
 
-        <div id="final-toughts" class="step" data-x="16500" data-y="10500">
+        <!-- Native vs Webapp -->
+        <div id="native-vs-webapp"
+            class="step" data-x="11500" data-y="8000" data-scale="6">
+            <h1>"Native" App vs Web App</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+	</div>
+
+        <!-- *************************************************************** -->
+
+        <!-- Final Thoughts -->
+        <div id="final-thoughts"
+            class="step" data-x="18500" data-y="8000" data-scale="6">
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
             <h1>Final Thoughts</h1>
-
             <ul>
                 <li data-jmpress="fade"> The Web is improving extremely rapidly. The next 1-2 years will see the gap between web apps and "native" marketplace delivered apps narrow substantially.
                 <li data-jmpress="fade"> Adobe has been bitten by the HTML5 bug and is now a major contributor. Look for excellent HTML5 content production and workflow tools to arrive in force.
@@ -2542,84 +2385,28 @@
                 <li data-jmpress="fade"> Keep an eye on Boot to Gecko and Chrome OS
             </ul>
 
-        </div>
-
-
-        <!-- TODO: content first, mobile first -->
+	</div>
 
 
         <!-- *************************************************************** -->
 
-        <!-- Resources -->
-        <div id="resources" class="step" data-x="0" data-y="12000">
-            <h1>HTML5 Resources</h1>
-            <h3>Browser/Features</h3>
-            <ul>
-                <li><a href="http://caniuse.com" target="resrefex1">caniuse</a>: HTML5 compatibility tables
-                <li><a href="http://html5please.com/" target="resrefex1a">HTML5 Please</a>: HTML5 features, readiness, recommendations, polyfills
-                <li><a href="http://mobilehtml5.org" target="resrefex2">Mobile HTML5</a>: Mobile HTML5 compatibility tables
-                <li><a href="http://kangax.github.com/es5-compat-table/" target="resrefex3">ES5 Compatibility Tables</a>
-                <li><a href="http://html5test.com/" target="resrefex4">HTML5test</a>: Browser HTML5 Feature Score
-                <li><a href="http://rng.io/" target="resrefex5">ringmark</a>: HTML5 Mobile Feature Scoring (by Facebook)
-                <li><a href="http://www.quirksmode.org/" target="resrefex5a">QuirksMode</a>: Browser differences and workarounds
-            </ul>
-
-
-            <h3>Reference</h3>
-            <ul>
-                <li><a href="https://developer.mozilla.org/en-US/" target="resex0">MDN</a>: Mozilla Developer Network (just Google with "mdn " prefix)
-                <li><a href="https://github.com/bebraw/jswiki/wiki" target="resex1">jswiki</a>: Comprehensive catalog of Javascript libraries, frameworks and resources.
-                <li><a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills" target="resex3">HTML5 Cross Browser Polyfills</a>: Fairly comprehensive list
-                <li><a href="http://microjs.com/" target="resex4">microjs</a>: Micro-framework index and search
-                <li><a href="https://github.com/bebraw/jswiki/wiki/Game-Engines" target="resex5">Javascript Game Engines</a>
-                <li><a href="http://phonegap.com/tools/" target="resex6">HTML5 Mobile UI Toolkits/Projects</a>
-                <li><a href="https://github.com/bebraw/jswiki/wiki/Beginner%27s-Resources" target="resex7">Javascript Beginner Resources</a>
-                <li><a href="http://html5rocks.com" target="resex8">HTML5Rocks</a>: Tons of documentation and examples
-            </ul>
-        </div>
-
-        <!-- Resources -->
-        <div id="resources2" class="step" data-x="1500" data-y="12000">
-            <h1>HTML5 Resources</h1>
-            <div>
-            <h3>Learning</h3>
-            <ul>
-                <li><a href="http://www.html5rocks.com/webappfieldguide/toc/index/index" target="resex9">HTML5Rocks Field Guide to Web Applications</a>
-                <li><a href="http://ejohn.org/apps/learn/" target="resex9a">John Resig's Advanced Javascript</a>
-
-                <li><a href="http://www.alistapart.com/articles/responsive-web-design/" target="resex10">A List Apart: Response Web Design</a>
-                <li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/" target="resex11">Javascript Design Patterns</a>
-                <li><a href="http://bonsaiden.github.com/JavaScript-Garden/" target="resex11a">JavaScript Garden</a>
-                <li><a href="http://wtfjs.com/" target="resex11b">wftjs</a>: Javascript Annoyances
-                <li><a href="http://pagespeed-velocity2011.appspot.com/" target="resex11c">Page Speed</a>: Web Site Acceleration Techniques
-                <li> Book: <a href="http://shop.oreilly.com/product/0636920020585.do" target="bookex1">Javascript: the Good Parts</a>
-                <li> Book: <a href="http://shop.oreilly.com/product/0636920022886.do" target="bookex2">jQuery Mobile</a>
-                <li> Book: <a href="http://shop.oreilly.com/product/9780596517748.do" target="bookex3">Building Android Apps with HTML, CSS and Javascript</a>
-            </ul>
+        <!-- People/Blogs -->
+        <div id="people-blogs"
+            class="step" data-x="11500" data-y="13000" data-scale="6">
+            <h1>People/Sites/Blogs</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
             </div>
-        </div>
+	</div>
 
-        <div id="resources3" class="step" data-x="3000" data-y="12000">
-            <h1>HTML5 Resources</h1>
-            <div>
-            <h3>Tools</h3>
-            <ul>
-                <li><a href="http://getfirebug.com/" target="resex12">Firebug</a>: Developer Tools for Firefox.
-                <li><a href="http://getfirebug.com/firebuglite" target="resex12a">Firebug Lite</a>: Developer Tools for any browser.
-                <li><a href="http://browserling.com/" target="resex13">Browserling</a>: Test across multiple browser versions
-                <li><a href="http://saucelabs.com/" target="resex14">Sauce Labs</a>: Run Selenium web tests in the cloud
-                <li><a href="http://jsfiddle.net" target="resex15">jsFiddle</a>: Online Web Editor
-                <li><a href="http://www.jshint.com/" target="resex15">JSHint</a>: Lint your Javascript code for errors and problems
-                <li><a href="http://phonegap.com" target="phonegap">PhoneGap</a>: Author native applications with web technologies.
-                <li><a href="http://incubator.apache.org/cordova/" target="cordova">Cordova</a>: Build native mobile apps using HTML, CSS and JavaScript
-                <li><a href="http://www.appmobi.com/" target="appmobi">AppMobi</a>: Tools for creating mobile and web apps (builds on PhoneGap)
-                <li><a href="http://urbanairship.com/" target="urbanairship">UrbanAirship</a>: Push notifications, in-app purchases, etc
-            </ul>
+
+        <!-- HTML5 Related Blogs -->
+        <div id="blogs"
+            class="step" data-x="10000" data-y="13000" data-scale="1.5">
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
             </div>
-        </div>
 
-        <!-- Blogs -->
-        <div id="blogs" class="step" data-x="4500" data-y="12000">
             <h1>HTML5 Blogs</h1>
 
             <h3>General</h3>
@@ -2645,10 +2432,16 @@
                 <li> <a href="http://blog.whatwg.org">WHATWG blog</a>
                 <li> <a href="http://www.w3.org/QA/">W3C blog</a>
             </ul>
-        </div>
 
-        <!-- People/Sites -->
-        <div id="people" class="step" data-x="6000" data-y="12000">
+	</div>
+
+        <!-- HTML5 People -->
+        <div id="people"
+            class="step" data-x="11500" data-y="13000" data-scale="1.5">
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
             <h1>HTML5 People</h1>
 
             <ul>
@@ -2662,22 +2455,107 @@
                 <li> <a href="http://annevankesteren.nl/">Anne van Kesteren</a>
             </ul>
 
+	</div>
+
+        <!-- HTML5 Sites -->
+        <div id="sites"
+            class="step" data-x="13000" data-y="13000" data-scale="1.5">
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
             <h1>HTML5 Sites</h1>
+
             <ul>
                 <li> <a href="http://www.alistapart.com/" target="alistapart">A List Apart</a>: For People Who Make Websites
                 <li><a href="http://www.useit.com/" target="nielsen">Jakob Nielsen</a>: Usability guides/reference
                 <li><a href="http://css-tricks.com/" target="css-tricks">CSS-Tricks</a>: A Web Design Community
                 <li><a href="http://stackoverflow.com" target="stackoverflow">StackOverflow</a>: All your questions are belong to us.
             </ul>
-        </div>
 
-        <!-- Finish: HTML5 Logo -->
-        <div id="finish" class="step" data-x="7500" data-y="12000">
-            <div style="width:100%; height: 100%;
-                        text-align: center; margin-top: 60px;">
-            <img height="400" src="imgs/HTML5_Logo_512.png">
+	</div>
+
+
+
+
+        <!-- *************************************************************** -->
+
+        <!-- Resources -->
+        <div id="resources"
+            class="step" data-x="18500" data-y="13000" data-scale="6">
+            <h1>Resources</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
             </div>
-        </div>
+	</div>
+
+        <!-- Compatibility -->
+        <div id="compatibility"
+            class="step" data-x="17000" data-y="13000" data-scale="1.5">
+            <h1>Compatibility</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
+            <ul>
+                <li><a href="http://caniuse.com" target="resrefex1">caniuse</a>: HTML5 compatibility tables
+                <li><a href="http://html5please.com/" target="resrefex1a">HTML5 Please</a>: HTML5 features, readiness, recommendations, polyfills
+                <li><a href="http://mobilehtml5.org" target="resrefex2">Mobile HTML5</a>: Mobile HTML5 compatibility tables
+                <li><a href="http://kangax.github.com/es5-compat-table/" target="resrefex3">ES5 Compatibility Tables</a>
+                <li><a href="http://html5test.com/" target="resrefex4">HTML5test</a>: Browser HTML5 Feature Score
+                <li><a href="http://rng.io/" target="resrefex5">ringmark</a>: HTML5 Mobile Feature Scoring (by Facebook)
+                <li><a href="http://www.quirksmode.org/" target="resrefex5a">QuirksMode</a>: Browser differences and workarounds
+            </ul>
+
+	</div>
+
+        <!-- Reference -->
+        <div id="reference"
+            class="step" data-x="18500" data-y="13000" data-scale="1.5">
+            <h1>Reference</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="resex0">MDN</a>: Mozilla Developer Network (just Google with "mdn " prefix)
+                <li><a href="https://github.com/bebraw/jswiki/wiki" target="resex1">jswiki</a>: Comprehensive catalog of Javascript libraries, frameworks and resources.
+                <li><a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills" target="resex3">HTML5 Cross Browser Polyfills</a>: Fairly comprehensive list
+                <li><a href="http://microjs.com/" target="resex4">microjs</a>: Micro-framework index and search
+                <li><a href="https://github.com/bebraw/jswiki/wiki/Game-Engines" target="resex5">Javascript Game Engines</a>
+                <li><a href="http://phonegap.com/tools/" target="resex6">HTML5 Mobile UI Toolkits/Projects</a>
+                <li><a href="https://github.com/bebraw/jswiki/wiki/Beginner%27s-Resources" target="resex7">Javascript Beginner Resources</a>
+                <li><a href="http://html5rocks.com" target="resex8">HTML5Rocks</a>: Tons of documentation and examples
+            </ul>
+
+
+	</div>
+
+        <!-- Learning -->
+        <div id="learning"
+            class="step" data-x="20000" data-y="13000" data-scale="1.5">
+            <h1>Learning</h1>
+            <div class="html5-logo">
+                <img height="100" src="imgs/HTML5_Logo_512.png">
+            </div>
+
+            <ul>
+                <li><a href="http://www.html5rocks.com/webappfieldguide/toc/index/index" target="resex9">HTML5Rocks Field Guide to Web Applications</a>
+                <li><a href="http://ejohn.org/apps/learn/" target="resex9a">John Resig's Advanced Javascript</a>
+
+                <li><a href="http://www.alistapart.com/articles/responsive-web-design/" target="resex10">A List Apart: Response Web Design</a>
+                <li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/" target="resex11">Javascript Design Patterns</a>
+                <li><a href="http://bonsaiden.github.com/JavaScript-Garden/" target="resex11a">JavaScript Garden</a>
+                <li><a href="http://wtfjs.com/" target="resex11b">wftjs</a>: Javascript Annoyances
+                <li><a href="http://pagespeed-velocity2011.appspot.com/" target="resex11c">Page Speed</a>: Web Site Acceleration Techniques
+                <li> Book: <a href="http://shop.oreilly.com/product/0636920020585.do" target="bookex1">Javascript: the Good Parts</a>
+                <li> Book: <a href="http://shop.oreilly.com/product/0636920022886.do" target="bookex2">jQuery Mobile</a>
+                <li> Book: <a href="http://shop.oreilly.com/product/9780596517748.do" target="bookex3">Building Android Apps with HTML, CSS and Javascript</a>
+            </ul>
+
+	</div>
+
+
 </div>
 
 <div class="hint">
@@ -2687,10 +2565,12 @@
 <script type="text/javascript">
 $(function() {
         $('#simple').jmpress({
+                /*
                 mouse: {
                     // Disable step mouse click
                     clickSelects: false
                 },
+                */
                 viewPort: {
                     zoomBindMove: false
                 }
