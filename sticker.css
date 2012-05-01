@@ -1,0 +1,47 @@
+.sticker {
+    width: 20em;
+    height: 12em;
+    margin: 3em;
+
+    background: #e00000;
+    border-radius: 1em;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+.sticker .title {
+    height: 4.5em;
+    padding-top: 1%;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sticker .hello {
+    padding: 0%; 
+    margin: 0%;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+}
+.sticker .name {
+    padding: 0%; 
+    margin: 0%;
+    font-size: 1.5em;
+}
+.sticker .text {
+    background: #fff;    
+    height: 5.5em;
+    padding-top: 2%;
+    font-family: "Schoolbell", "Comic Sans MS", cursive;
+    text-align: center;
+
+}
+.sticker .written {
+    margin: 0%;
+    padding-top: 2%;
+    font-size: 3em;
+    font-weight: bold;
+}    
